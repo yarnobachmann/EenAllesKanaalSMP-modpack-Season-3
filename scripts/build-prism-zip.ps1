@@ -22,6 +22,15 @@ function Get-PackVersion {
     return (Get-Date -Format "yyyyMMdd-HHmm")
 }
 
+function Set-Utf8NoBom {
+    param(
+        [string]$Path,
+        [string]$Value
+    )
+    $encoding = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($Path, $Value, $encoding)
+}
+
 & "$PSScriptRoot\refresh-pack.ps1"
 
 $config = Read-DeploymentConfig
@@ -61,7 +70,7 @@ OverrideMemory=true
 MinMemAlloc=$memoryMb
 MaxMemAlloc=$memoryMb
 "@
-Set-Content -LiteralPath (Join-Path $stagingRoot "instance.cfg") -Value $instanceCfg -Encoding UTF8
+Set-Utf8NoBom -Path (Join-Path $stagingRoot "instance.cfg") -Value $instanceCfg
 
 if (-not [string]::IsNullOrWhiteSpace($iconFile)) {
     $iconPath = Join-Path $Root $iconFile
@@ -88,7 +97,7 @@ $mmcPack = [ordered]@{
     )
     formatVersion = 1
 }
-$mmcPack | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $stagingRoot "mmc-pack.json") -Encoding UTF8
+Set-Utf8NoBom -Path (Join-Path $stagingRoot "mmc-pack.json") -Value ($mmcPack | ConvertTo-Json -Depth 5)
 
 $bootstrapUrl = "https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar"
 Invoke-WebRequest -Uri $bootstrapUrl -OutFile $bootstrapPath

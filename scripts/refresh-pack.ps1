@@ -16,6 +16,15 @@ function Get-Sha256 {
     return (Get-FileHash -Algorithm SHA256 -LiteralPath $Path).Hash.ToLowerInvariant()
 }
 
+function Set-Utf8NoBom {
+    param(
+        [string]$Path,
+        [string]$Value
+    )
+    $encoding = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText((Join-Path $Root $Path), $Value, $encoding)
+}
+
 function Add-IndexedFile {
     param(
         [System.Collections.Generic.List[object]]$Files,
@@ -95,7 +104,7 @@ foreach ($entry in ($indexed | Sort-Object file)) {
 }
 
 $indexText = $lines -join "`n"
-Set-Content -LiteralPath ".\index.toml" -Value $indexText -Encoding UTF8
+Set-Utf8NoBom -Path "index.toml" -Value $indexText
 
 $indexHash = Get-Sha256 ".\index.toml"
 $packText = Get-Content -Raw -LiteralPath ".\pack.toml"
@@ -104,7 +113,7 @@ if ($packText -match '(?s)(\[index\].*?hash\s*=\s*")[^"]+(")') {
 } else {
     throw "Could not find [index] hash in pack.toml."
 }
-Set-Content -LiteralPath ".\pack.toml" -Value $packText -Encoding UTF8
+Set-Utf8NoBom -Path "pack.toml" -Value $packText
 
 Write-Host "Indexed $($indexed.Count) files."
 Write-Host "index.toml sha256: $indexHash"

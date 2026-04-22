@@ -1,4 +1,4 @@
-﻿name = "EenAllesKanaal SMP Season 3"
+name = "EenAllesKanaal SMP Season 3"
 author = "EenAllesKanaal SMP"
 version = "1.0.0"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ca5128f61279d695c934a42681e11355ba09042251a34645f01f871449693f96"
+hash = "5038128a5b2ea942edb3eee3e75c5e8e5caedac0d2ffdbe53728a69dac3a29de"
 
 [versions]
 minecraft = "1.21.1"

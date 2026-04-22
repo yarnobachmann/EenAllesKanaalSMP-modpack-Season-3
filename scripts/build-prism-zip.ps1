@@ -27,6 +27,7 @@ function Set-Utf8NoBom {
         [string]$Path,
         [string]$Value
     )
+    $Value = $Value -replace "`r`n", "`n"
     $encoding = New-Object System.Text.UTF8Encoding($false)
     [System.IO.File]::WriteAllText($Path, $Value, $encoding)
 }

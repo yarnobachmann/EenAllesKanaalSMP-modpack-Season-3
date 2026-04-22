@@ -50,8 +50,49 @@ if (-not (Test-Path ".\pack.toml")) {
 
 $indexed = [System.Collections.Generic.List[object]]::new()
 $managedModJars = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
+$excludedPackPaths = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
+
+@(
+    "mods/animatica-0-6-1-1-21.pw.toml",
+    "mods/animatica-0.6.1+1.21.jar",
+    "mods/capes-1-5-4-1-21-fabric.pw.toml",
+    "mods/capes-1.5.4+1.21-fabric.jar",
+    "mods/citresewn-1-2-2-1-21.pw.toml",
+    "mods/citresewn-1.2.2+1.21.jar",
+    "mods/citresewn-neopatcher-1-1-0-1-2-2.pw.toml",
+    "mods/citresewn_neopatcher-1.1.0-1.2.2.jar",
+    "mods/connector-2-0-0-beta-12-1-21-1-full.pw.toml",
+    "mods/connector-2.0.0-beta.12+1.21.1-full.jar",
+    "mods/connectorextras-1-12-1-1-21-1.pw.toml",
+    "mods/ConnectorExtras-1.12.1+1.21.1.jar",
+    "mods/enhancedblockentities-0-10-2-1-21.pw.toml",
+    "mods/enhancedblockentities-0.10.2+1.21.jar",
+    "mods/fabric-api-0-116-10-1-21-1.pw.toml",
+    "mods/fabric-api-0.116.10+1.21.1.jar",
+    "mods/fabric-language-kotlin-1-13-0-kotlin-2-1-0.pw.toml",
+    "mods/fabric-language-kotlin-1.13.0+kotlin.2.1.0.jar",
+    "mods/fabrishot-1-14-1.pw.toml",
+    "mods/fabrishot-1.14.1.jar",
+    "mods/main-menu-credits-1-2-0.pw.toml",
+    "mods/main-menu-credits-1.2.0.jar",
+    "mods/morechathistory-1-3-1.pw.toml",
+    "mods/morechathistory-1.3.1.jar",
+    "mods/optigui-2-3-0-beta-6-1-21.pw.toml",
+    "mods/optigui-2.3.0-beta.6+1.21.jar",
+    "mods/paginatedadvancements-2-5-1.pw.toml",
+    "mods/paginatedadvancements-2.5.1.jar"
+) | ForEach-Object { [void]$excludedPackPaths.Add($_) }
+
+function Test-PackPathExcluded {
+    param([string]$Path)
+    $packPath = ConvertTo-PackPath $Path
+    return $excludedPackPaths.Contains($packPath)
+}
 
 Get-ChildItem -Path ".\mods" -Filter "*.pw.toml" -File -ErrorAction SilentlyContinue | Sort-Object FullName | ForEach-Object {
+    if (Test-PackPathExcluded $_.FullName) {
+        return
+    }
     $content = Get-Content -Raw -LiteralPath $_.FullName
     if ($content -match '(?m)^filename\s*=\s*"([^"]+)"') {
         [void]$managedModJars.Add($Matches[1])
@@ -60,6 +101,9 @@ Get-ChildItem -Path ".\mods" -Filter "*.pw.toml" -File -ErrorAction SilentlyCont
 }
 
 Get-ChildItem -Path ".\mods" -Filter "*.jar" -File -ErrorAction SilentlyContinue | Sort-Object FullName | ForEach-Object {
+    if (Test-PackPathExcluded $_.FullName) {
+        return
+    }
     if (-not $managedModJars.Contains($_.Name)) {
         Add-IndexedFile -Files $indexed -Path $_.FullName -Metafile $false
     }

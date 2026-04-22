@@ -1539,3 +1539,31 @@ neoforge = "21.1.227"
 
 ```
 
+## 2026-04-22 NeoForge launch fix
+
+The hosted pack was changed to avoid distributing the Fabric/Connector compatibility layer inside the NeoForge Prism import. The crash log showed Fabric loader classes (`net.fabricmc.loader.impl.launch.knot.KnotClient`) and a Create client mixin failure, which points to a Fabric launch path or Fabric-side compatibility content being installed with this NeoForge pack.
+
+Changed files:
+
+- `scripts/refresh-pack.ps1`: added an explicit exclusion list for Fabric-only/Connector entries so they remain in the local folder but are not added to `index.toml`.
+- `index.toml`: refreshed after excluding those entries.
+- `pack.toml`: updated the index hash.
+- `dist/EenAllesKanaal-SMP-Season-3-1.0.0-prism.zip`: rebuilt with the refreshed pack metadata.
+
+Excluded from distribution, without deleting local files:
+
+- Animatica
+- Capes Fabric
+- CIT Resewn and CITResewn NeoPatcher
+- Sinytra Connector and ConnectorExtras
+- Enhanced Block Entities
+- Fabric API
+- Fabric Language Kotlin
+- Fabrishot
+- Main Menu Credits
+- More Chat History
+- OptiGUI
+- Paginated Advancements
+
+The Prism zip still declares Minecraft `1.21.1`, NeoForge `21.1.227`, 6144 MB memory, the pack icon, and the pre-launch packwiz bootstrap command.
+

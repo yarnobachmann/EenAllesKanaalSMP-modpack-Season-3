@@ -2761,11 +2761,6 @@ hash = "8c4e6b7a36fb1a38acb9494d8d879a328735777763a17c9a23d3cdbadc71a89b"
 metafile = true
 
 [[files]]
-file = "mods/animatica-0-6-1-1-21.pw.toml"
-hash = "4bb357585c93a18f428585523dba0a099386743916798f425970368530f17d56"
-metafile = true
-
-[[files]]
 file = "mods/Apotheosis-1.21.1-8.5.2.jar"
 hash = "63c8e7096f7a57a3256137ea9d15753901a1b031979adcb8b894955c274e52f0"
 metafile = false
@@ -2876,11 +2871,6 @@ hash = "1e409f0c83f8ed7f01ae9382a064079a42fc2b624e3c22674cfe0aba737cb57f"
 metafile = true
 
 [[files]]
-file = "mods/capes-1-5-4-1-21-fabric.pw.toml"
-hash = "282cc4092ca76515d4bda4ffc0a79798376bcb08b0d70949d61a5d186a415d17"
-metafile = true
-
-[[files]]
 file = "mods/chatanimation-neoforge-1-21-1-1-1-3.pw.toml"
 hash = "ebb85c0e615a828083da09681391f152eece02c6bad51f6ac573c49d88dde3e6"
 metafile = true
@@ -2893,16 +2883,6 @@ metafile = true
 [[files]]
 file = "mods/chipped-neoforge-1-21-1-4-0-2.pw.toml"
 hash = "e2cc7cd20d64852648deda0ed5e83da604bfce208ac71400d77692f041b71265"
-metafile = true
-
-[[files]]
-file = "mods/citresewn-1-2-2-1-21.pw.toml"
-hash = "3537ca3106a6f2340c8fdd4279e25b7d64f372db0db015bc41dfb1b5534a2a76"
-metafile = true
-
-[[files]]
-file = "mods/citresewn-neopatcher-1-1-0-1-2-2.pw.toml"
-hash = "167b82330231265acc0ab43dc1e341574ba1a3bb149b3e0096ce9f0e3e2468db"
 metafile = true
 
 [[files]]
@@ -2928,16 +2908,6 @@ metafile = true
 [[files]]
 file = "mods/configurable-3-3-2-1-21-1-neoforge.pw.toml"
 hash = "f34bf45f0ae4220913e84273f4e5ec2f212fadc6e4a54133e7d533c23be3abf8"
-metafile = true
-
-[[files]]
-file = "mods/connector-2-0-0-beta-12-1-21-1-full.pw.toml"
-hash = "5176bc4382da57d0f438b4074a1a34031607e8681a58b8b9b85887351b95da8b"
-metafile = true
-
-[[files]]
-file = "mods/connectorextras-1-12-1-1-21-1.pw.toml"
-hash = "c72f3aea6a091390b2ce166551c4846bb623c82410d1629c56a813dbd7d0ba87"
 metafile = true
 
 [[files]]
@@ -3166,11 +3136,6 @@ hash = "ebbf07ded3de3ebb87a8705c870f224f3d39b045385bfcd1adb9b5848a126a0c"
 metafile = true
 
 [[files]]
-file = "mods/enhancedblockentities-0-10-2-1-21.pw.toml"
-hash = "fffb11eb1d5f131b4c5736c94ba0ca379c8d5890e80d79d789628fc02f5453ff"
-metafile = true
-
-[[files]]
 file = "mods/entityculling-neoforge-1-9-5-mc1-21-1.pw.toml"
 hash = "d33592e45049de65bd45ad1b6934e95b69541794c1cd0058e53cf0106cc9e406"
 metafile = true
@@ -3208,21 +3173,6 @@ metafile = true
 [[files]]
 file = "mods/explorerscompass-1-21-1-3-4-0-neoforge.pw.toml"
 hash = "ae1a8c287e0895da4a26cfe01f982bba533c018060ea9d39c286bffe422d0fb8"
-metafile = true
-
-[[files]]
-file = "mods/fabric-api-0-116-10-1-21-1.pw.toml"
-hash = "e2df162785464d4ec9e38dc040cc830c5f8a69739681b69d59db9473c2a3ef9e"
-metafile = true
-
-[[files]]
-file = "mods/fabric-language-kotlin-1-13-0-kotlin-2-1-0.pw.toml"
-hash = "39322c15a43764d1e8a265c47d18e1f86cd21985ae931f32b9339d442462d6fc"
-metafile = true
-
-[[files]]
-file = "mods/fabrishot-1-14-1.pw.toml"
-hash = "36200dc997ea25e7b639e3a9874c5b6ad921c1df7c9849cb590cb5e895855274"
 metafile = true
 
 [[files]]
@@ -3476,11 +3426,6 @@ hash = "cd51011a5430e9a669e669a23f38c48fed92205bb019f6afabb5a88ddbf277a4"
 metafile = true
 
 [[files]]
-file = "mods/main-menu-credits-1-2-0.pw.toml"
-hash = "aedede0babd7d98f6f8dcc78e529d4c051062d64936e8b871ffd45e1b1f7665f"
-metafile = true
-
-[[files]]
 file = "mods/mcw-bridges-3-1-2-mc1-21-1neoforge.pw.toml"
 hash = "5a2a3f98014cca829c7ad3d72bff27dbf0b0fe67fefac17af1c9b79e5ed9435a"
 metafile = true
@@ -3611,11 +3556,6 @@ hash = "6147dee5020b2c904d743558e60e70315ab0b22d131eeacac4ad0439e544e208"
 metafile = true
 
 [[files]]
-file = "mods/morechathistory-1-3-1.pw.toml"
-hash = "15cd06acfdc9ec25320fe6d1b4849536a4a5fc5cd2070f2a7ed5321047212dde"
-metafile = true
-
-[[files]]
 file = "mods/moreculling-neoforge-1-21-1-1-0-6.pw.toml"
 hash = "07ec4accddc4f7b12af2a7ceab7c90516be89e955861819edda5567b44fb9a5f"
 metafile = true
@@ -3651,18 +3591,8 @@ hash = "1dfe5b326e3b8511939948e8ddcfa42f3dc949bdb5b8387e9c7c7b27250f093d"
 metafile = true
 
 [[files]]
-file = "mods/optigui-2-3-0-beta-6-1-21.pw.toml"
-hash = "0c36a860e2bb4bc4865f34a2eb5887d905ecde916c30c8b8ec51367cbce98cd4"
-metafile = true
-
-[[files]]
 file = "mods/owo-lib-neoforge-0-12-15-5-beta-1-1-21.pw.toml"
 hash = "fd12aa920280fea05bc2036a16e020b82b2abda740148e082c5c5722058013e9"
-metafile = true
-
-[[files]]
-file = "mods/paginatedadvancements-2-5-1.pw.toml"
-hash = "c17c2e00bff91bda9a02f43d84c0774395704f21430dd00e59ded4b4e224d759"
 metafile = true
 
 [[files]]

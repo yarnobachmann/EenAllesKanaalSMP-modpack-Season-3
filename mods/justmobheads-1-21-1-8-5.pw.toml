@@ -1,0 +1,13 @@
+﻿name = "[Fabric/Forge/Neo] 1.21.1-8.5"
+filename = "justmobheads-1.21.1-8.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/jzTUm9hE/versions/tVPeAVbm/justmobheads-1.21.1-8.5.jar"
+hash-format = "sha512"
+hash = "3761dfc4bc5865b40ee6db6661752cd97f01fd7aa48766da586c3689d70f08cb5adb6b871db9c4a3e76626b9d7efcec62fcad4082b69e070913ac37220cf7d68"
+
+[update]
+[update.modrinth]
+mod-id = "jzTUm9hE"
+version = "tVPeAVbm"

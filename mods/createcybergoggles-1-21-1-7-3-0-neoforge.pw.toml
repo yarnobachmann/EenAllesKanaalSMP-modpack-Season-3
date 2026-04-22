@@ -1,0 +1,13 @@
+﻿name = "[NeoForge] 7.3.0 for Create 1.21.1-6.0.9"
+filename = "CreateCyberGoggles-1.21.1-7.3.0-NeoForge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/TlQAWQCY/versions/ixJGcGvt/CreateCyberGoggles-1.21.1-7.3.0-NeoForge.jar"
+hash-format = "sha512"
+hash = "e5ed17e9063c9adadc9dd79898443541d6337b72ffee42a18d160761619ff4bc40e42618a54893a9cb6653910bedbe767f63718988ed393277f5650c95cfe6fa"
+
+[update]
+[update.modrinth]
+mod-id = "TlQAWQCY"
+version = "ixJGcGvt"

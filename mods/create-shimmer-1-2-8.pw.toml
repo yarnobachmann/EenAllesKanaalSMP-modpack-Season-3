@@ -1,0 +1,13 @@
+﻿name = "Create: Shimmer 1.2.8"
+filename = "create-shimmer-1.2.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/d7tBNLJP/versions/CEcmJyuR/create-shimmer-1.2.8.jar"
+hash-format = "sha512"
+hash = "b4ad15d1d2454623c3a585efc4446915021392b8ef6795a6781d9e93d189dc2854aba50651d4415e82b56bbc4d541103ec7f1244b5918a57f8cc0796be436590"
+
+[update]
+[update.modrinth]
+mod-id = "d7tBNLJP"
+version = "CEcmJyuR"

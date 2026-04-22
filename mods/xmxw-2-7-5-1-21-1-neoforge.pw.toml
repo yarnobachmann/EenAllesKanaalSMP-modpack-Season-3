@@ -1,0 +1,13 @@
+﻿name = "2.7.5 for neoforge 1.21.1"
+filename = "xmxw-2.7.5+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/iv2jCzkP/versions/35ayTy2t/xmxw-2.7.5%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "66e3aaa4289c595a9fe657e13ac5f25776484b0a0df791b153672a9562cc208632cbf9f886a2c8e3855a7ad89c29e4d5a6ebd359d2eb6e52fae39550a0f41d91"
+
+[update]
+[update.modrinth]
+mod-id = "iv2jCzkP"
+version = "35ayTy2t"

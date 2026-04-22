@@ -1,0 +1,13 @@
+﻿name = "v2.4.2+1.21(.1)+neoforge"
+filename = "chattools-v2.4.2+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/pbnlOdwp/versions/spskqjzz/chattools-v2.4.2%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "f32f94eef9b9c01898e071633115204c7f2d7ab88f2afdbbff51d6a365e3eb7932530590f06e70549dd3ab2ea18302b90c53d6d2e374d44a39126ab7a64ebf83"
+
+[update]
+[update.modrinth]
+mod-id = "pbnlOdwp"
+version = "spskqjzz"

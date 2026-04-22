@@ -51,6 +51,14 @@ The instance pre-launch command is:
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/pack.toml
 ```
 
+For Prism's `Import from zip` URL field, use the direct zip URL:
+
+```text
+https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/EenAllesKanaal-SMP-Season-3-1.0.0-prism.zip
+```
+
+Do not use the plain site root URL as the Prism import URL.
+
 Edit `deployment.json` if you want to override the example values. If `deployment.json` does not exist, the build script uses `deployment.example.json`.
 
 ## Updating the pack later

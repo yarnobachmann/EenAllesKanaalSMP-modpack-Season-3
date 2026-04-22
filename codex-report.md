@@ -32,6 +32,8 @@
 - `scripts/refresh-pack.ps1`
 - `scripts/build-prism-zip.ps1`
 - `dist/EenAllesKanaal-SMP-Season-3-1.0.0-prism.zip`
+- `EenAllesKanaal-SMP-Season-3-1.0.0-prism.zip`
+- `modpack icon.png`
 - `codex-report.md`
 - `mods/*.pw.toml (244 files)`
 
@@ -1188,16 +1190,21 @@ mods/
   *.pw.toml (244 Modrinth metadata files)
 dist/
   EenAllesKanaal-SMP-Season-3-1.0.0-prism.zip
+EenAllesKanaal-SMP-Season-3-1.0.0-prism.zip
+modpack icon.png
 ```
 
 ## Prism zip contents
 
 ```text
-EenAllesKanaal SMP Season 3/
-  instance.cfg
-  mmc-pack.json
+instance.cfg
+mmc-pack.json
+eak-season-3.png
+minecraft/
   packwiz-installer-bootstrap.jar
 ```
+
+The Prism zip sets `MinMemAlloc=6144` and `MaxMemAlloc=6144`.
 
 ## Created script and config file contents
 

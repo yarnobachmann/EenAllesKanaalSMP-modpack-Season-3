@@ -6,5 +6,8 @@
   "instanceName": "EenAllesKanaal SMP Season 3",
   "minecraftVersion": "1.21.1",
   "loader": "neoforge",
-  "loaderVersion": "21.1.227"
+  "loaderVersion": "21.1.227",
+  "memoryMb": 6144,
+  "iconFile": "modpack icon.png",
+  "iconKey": "eak-season-3"
 }

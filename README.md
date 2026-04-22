@@ -51,6 +51,8 @@ The instance pre-launch command is:
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/pack.toml
 ```
 
+The zip sets the instance memory to `6144 MB` and includes the modpack icon from `modpack icon.png`.
+
 For Prism's `Import from zip` URL field, use the direct zip URL:
 
 ```text

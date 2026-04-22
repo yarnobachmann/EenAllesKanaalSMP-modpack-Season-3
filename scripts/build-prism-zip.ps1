@@ -29,36 +29,54 @@ $instanceName = $config.instanceName
 $minecraftVersion = $config.minecraftVersion
 $loaderVersion = $config.loaderVersion
 $packUrl = $config.packUrl
+$memoryMb = $config.memoryMb
+$iconFile = $config.iconFile
+$iconKey = $config.iconKey
 
 if ([string]::IsNullOrWhiteSpace($instanceName)) { throw "instanceName is missing from deployment config." }
 if ([string]::IsNullOrWhiteSpace($minecraftVersion)) { throw "minecraftVersion is missing from deployment config." }
 if ([string]::IsNullOrWhiteSpace($loaderVersion)) { throw "loaderVersion is missing from deployment config." }
 if ([string]::IsNullOrWhiteSpace($packUrl)) { throw "packUrl is missing from deployment config." }
+if (-not $memoryMb) { $memoryMb = 6144 }
+if ([string]::IsNullOrWhiteSpace($iconKey)) { $iconKey = "eak-season-3" }
 
 $dist = Join-Path $Root "dist"
 $stagingRoot = Join-Path $dist "prism-staging"
-$instanceRoot = Join-Path $stagingRoot $instanceName
-$bootstrapPath = Join-Path $instanceRoot "packwiz-installer-bootstrap.jar"
+$minecraftRoot = Join-Path $stagingRoot "minecraft"
+$bootstrapPath = Join-Path $minecraftRoot "packwiz-installer-bootstrap.jar"
 
 if (Test-Path $stagingRoot) {
     Remove-Item -LiteralPath $stagingRoot -Recurse -Force
 }
-New-Item -ItemType Directory -Force -Path $instanceRoot | Out-Null
+New-Item -ItemType Directory -Force -Path $minecraftRoot | Out-Null
 
 $instanceCfg = @"
-ConfigVersion=1.2
-InstanceType=OneSix
 name=$instanceName
-iconKey=default
+InstanceType=OneSix
+MCLaunchMethod=LauncherPart
+iconKey=$iconKey
 OverrideCommands=true
 PreLaunchCommand=`"`$INST_JAVA`" -jar packwiz-installer-bootstrap.jar $packUrl
+OverrideMemory=true
+MinMemAlloc=$memoryMb
+MaxMemAlloc=$memoryMb
 "@
-Set-Content -LiteralPath (Join-Path $instanceRoot "instance.cfg") -Value $instanceCfg -Encoding UTF8
+Set-Content -LiteralPath (Join-Path $stagingRoot "instance.cfg") -Value $instanceCfg -Encoding UTF8
+
+if (-not [string]::IsNullOrWhiteSpace($iconFile)) {
+    $iconPath = Join-Path $Root $iconFile
+    if (Test-Path -LiteralPath $iconPath -PathType Leaf) {
+        Copy-Item -LiteralPath $iconPath -Destination (Join-Path $stagingRoot "$iconKey.png") -Force
+    } else {
+        Write-Warning "Configured icon file was not found: $iconFile"
+    }
+}
 
 $mmcPack = [ordered]@{
     components = @(
         [ordered]@{
             cachedName = "Minecraft"
+            important = $true
             uid = "net.minecraft"
             version = $minecraftVersion
         },
@@ -70,7 +88,7 @@ $mmcPack = [ordered]@{
     )
     formatVersion = 1
 }
-$mmcPack | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $instanceRoot "mmc-pack.json") -Encoding UTF8
+$mmcPack | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $stagingRoot "mmc-pack.json") -Encoding UTF8
 
 $bootstrapUrl = "https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar"
 Invoke-WebRequest -Uri $bootstrapUrl -OutFile $bootstrapPath
@@ -82,6 +100,7 @@ if (Test-Path $zipPath) {
     Remove-Item -LiteralPath $zipPath -Force
 }
 
-Compress-Archive -LiteralPath $instanceRoot -DestinationPath $zipPath -Force
+$stagingFiles = Get-ChildItem -LiteralPath $stagingRoot -Force
+Compress-Archive -LiteralPath $stagingFiles.FullName -DestinationPath $zipPath -Force
 Remove-Item -LiteralPath $stagingRoot -Recurse -Force
 Write-Host "Created $zipPath"

@@ -3131,6 +3131,11 @@ hash = "5616f6e9286ad0ca6173623199d56aa27a77d2a8181a2624a609836ea32e3444"
 metafile = false
 
 [[files]]
+file = "mods/CreativeCore_NEOFORGE_v2.13.37_mc1.21.1.jar"
+hash = "5ea72f852ad17ee5ce88bee0405b80bed31ee0bb02a4f557013e3a6c463edb60"
+metafile = false
+
+[[files]]
 file = "mods/cristellib-neoforge-1.21.1-3.0.3.jar"
 hash = "f5ada4fe5a4a8ba9f8800a54f9ae6fe5a7a4d1156ada6567d11d45e3c3b02239"
 metafile = false
@@ -3956,6 +3961,21 @@ hash = "1d3cc0668f3aaad383e2f0940c14c8c7d278ff6f71332afbac6d368a2438bedc"
 metafile = false
 
 [[files]]
+file = "mods/waterframes.pw.toml"
+hash = "ccbf06496c31803f028a82690086e12726c163f2f9d1da7813a2469ef759ac89"
+metafile = true
+
+[[files]]
+file = "mods/watermedia-3.0.0.15.jar"
+hash = "1aeb557cf5b2837a3e0621417126ac9854a1a0acb06310a57406024fe3f89a20"
+metafile = false
+
+[[files]]
+file = "mods/watervision.pw.toml"
+hash = "30ce5af1a7b294632faa21de8626e1cfcb06265c52b35472969cbc8a36a8a7b0"
+metafile = true
+
+[[files]]
 file = "mods/waystones-neoforge-1.21.1-21.1.30.jar"
 hash = "9b4ccf9e5811ecdebdb0acbf3f3ee3f525df0ab9c1fe9ae3e3ee7c9f52288099"
 metafile = false
@@ -3964,6 +3984,11 @@ metafile = false
 file = "mods/WI-Zoom-1.6-MC1.21.1-NeoForge.jar"
 hash = "e603af2004d71bcb0b42e339c9297fd164219c608c02d32d76a1ac5988473d5f"
 metafile = false
+
+[[files]]
+file = "mods/wm-binaries.pw.toml"
+hash = "b21b5bc5a8950904683483ceec0a90cbf064cdc9c1ad5d468249f8080df504df"
+metafile = true
 
 [[files]]
 file = "mods/xaerominimap-neoforge-1.21.1-25.3.10.jar"

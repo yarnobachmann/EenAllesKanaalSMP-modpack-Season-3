@@ -68,8 +68,21 @@ $configsToExclude = @(
 
 $modsDestination = Join-Path $LiteRoot "mods"
 New-Item -ItemType Directory -Force -Path $modsDestination | Out-Null
+Get-ChildItem -LiteralPath (Join-Path $RepoRoot "mods") -Filter "*.pw.toml" -File | Sort-Object Name | ForEach-Object {
+    Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $modsDestination $_.Name) -Force
+}
+$managedModJars = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
+Get-ChildItem -LiteralPath (Join-Path $RepoRoot "mods") -Filter "*.pw.toml" -File | ForEach-Object {
+    $content = Get-Content -Raw -LiteralPath $_.FullName
+    if ($content -match '(?m)^filename\s*=\s*"([^"]+)"') {
+        [void]$managedModJars.Add($Matches[1])
+    }
+}
 Get-ChildItem -LiteralPath (Join-Path $RepoRoot "mods") -Filter "*.jar" -File | Sort-Object Name | ForEach-Object {
     if ($modsToExclude -contains $_.Name) {
+        return
+    }
+    if ($managedModJars.Contains($_.Name)) {
         return
     }
     Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $modsDestination $_.Name) -Force

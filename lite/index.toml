@@ -3981,6 +3981,11 @@ hash = "12f70206803cc51b2e0b8a2f43ab6065ea019b037ea877ad70f11f1d6444442e"
 metafile = true
 
 [[files]]
+file = "mods/watermedia-youtube-plugin.pw.toml"
+hash = "90ec87e81afcb2b8e61b32ccb6e37a85739d814a6758e813cc851d95253becd3"
+metafile = true
+
+[[files]]
 file = "mods/watervision.pw.toml"
 hash = "30ce5af1a7b294632faa21de8626e1cfcb06265c52b35472969cbc8a36a8a7b0"
 metafile = true

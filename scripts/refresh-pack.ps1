@@ -79,7 +79,9 @@ $excludedPackPaths = [System.Collections.Generic.HashSet[string]]::new([System.S
     "mods/morechathistory-1.3.1.jar",
     "mods/optigui-2.3.0-beta.6+1.21.jar",
     "mods/paginatedadvancements-2.5.1.jar",
+    "mods/waterframes-NEOFORGE-mc1.21.1-v2.1.22.jar",
     "mods/watermedia-3.0.0.15.jar",
+    "mods/watervision-NF-mc1.21.1-v0.1.0-alpha.jar",
     "mods/wm_binaries-3.0.0-rc.1.jar"
 ) | ForEach-Object { [void]$excludedPackPaths.Add($_) }
 

@@ -3971,26 +3971,6 @@ hash = "1d3cc0668f3aaad383e2f0940c14c8c7d278ff6f71332afbac6d368a2438bedc"
 metafile = false
 
 [[files]]
-file = "mods/waterframes.pw.toml"
-hash = "ccbf06496c31803f028a82690086e12726c163f2f9d1da7813a2469ef759ac89"
-metafile = true
-
-[[files]]
-file = "mods/watermedia.pw.toml"
-hash = "12f70206803cc51b2e0b8a2f43ab6065ea019b037ea877ad70f11f1d6444442e"
-metafile = true
-
-[[files]]
-file = "mods/watermedia-youtube-plugin.pw.toml"
-hash = "90ec87e81afcb2b8e61b32ccb6e37a85739d814a6758e813cc851d95253becd3"
-metafile = true
-
-[[files]]
-file = "mods/watervision.pw.toml"
-hash = "30ce5af1a7b294632faa21de8626e1cfcb06265c52b35472969cbc8a36a8a7b0"
-metafile = true
-
-[[files]]
 file = "mods/waystones-neoforge-1.21.1-21.1.30.jar"
 hash = "9b4ccf9e5811ecdebdb0acbf3f3ee3f525df0ab9c1fe9ae3e3ee7c9f52288099"
 metafile = false

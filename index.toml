@@ -3006,6 +3006,16 @@ hash = "4f77d5d3bc4322a30b1171e9dab2bf2fed36f87f1d92ddd7a8017c0b558bcb9b"
 metafile = false
 
 [[files]]
+file = "mods/connector-2.0.0-beta.14+1.21.1-full.jar"
+hash = "a79817f1076e2e6499b0ab09c4e8c032d04b071341b66d036c3d96112804e51b"
+metafile = false
+
+[[files]]
+file = "mods/ConnectorExtras-1.12.1+1.21.1.jar"
+hash = "ee89c3425b9a4bff766aaff02ccf8110c06f5da6ef5d71974556885cf25d4880"
+metafile = false
+
+[[files]]
 file = "mods/continuity-3.0.0+1.21.neoforge.jar"
 hash = "4cc0a4a09ae09c64bb567e42381652b700f9cade5067a75e83115662cc475f0a"
 metafile = false
@@ -3991,9 +4001,9 @@ hash = "ccbf06496c31803f028a82690086e12726c163f2f9d1da7813a2469ef759ac89"
 metafile = true
 
 [[files]]
-file = "mods/watermedia-3.0.0.15.jar"
-hash = "1aeb557cf5b2837a3e0621417126ac9854a1a0acb06310a57406024fe3f89a20"
-metafile = false
+file = "mods/watermedia.pw.toml"
+hash = "12f70206803cc51b2e0b8a2f43ab6065ea019b037ea877ad70f11f1d6444442e"
+metafile = true
 
 [[files]]
 file = "mods/watervision.pw.toml"
@@ -4009,11 +4019,6 @@ metafile = false
 file = "mods/WI-Zoom-1.6-MC1.21.1-NeoForge.jar"
 hash = "e603af2004d71bcb0b42e339c9297fd164219c608c02d32d76a1ac5988473d5f"
 metafile = false
-
-[[files]]
-file = "mods/wm-binaries.pw.toml"
-hash = "b21b5bc5a8950904683483ceec0a90cbf064cdc9c1ad5d468249f8080df504df"
-metafile = true
 
 [[files]]
 file = "mods/xaerominimap-neoforge-1.21.1-25.3.10.jar"

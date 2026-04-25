@@ -57,7 +57,9 @@ $resourcepackPatternsToKeep = @(
 
 $modsToExclude = @(
     "DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar",
-    "iris-neoforge-1.8.12+mc1.21.1.jar"
+    "iris-neoforge-1.8.12+mc1.21.1.jar",
+    "watermedia-3.0.0.15.jar",
+    "wm_binaries-3.0.0-rc.1.jar"
 )
 
 $configsToExclude = @(

@@ -71,8 +71,6 @@ $excludedPackPaths = [System.Collections.Generic.HashSet[string]]::new([System.S
     "mods/capes-1.5.4+1.21-fabric.jar",
     "mods/citresewn-1.2.2+1.21.jar",
     "mods/citresewn_neopatcher-1.1.0-1.2.2.jar",
-    "mods/connector-2.0.0-beta.14+1.21.1-full.jar",
-    "mods/ConnectorExtras-1.12.1+1.21.1.jar",
     "mods/enhancedblockentities-0.10.2+1.21.jar",
     "mods/fabric-api-0.116.10+1.21.1.jar",
     "mods/fabric-language-kotlin-1.13.0+kotlin.2.1.0.jar",
@@ -80,7 +78,9 @@ $excludedPackPaths = [System.Collections.Generic.HashSet[string]]::new([System.S
     "mods/main-menu-credits-1.2.0.jar",
     "mods/morechathistory-1.3.1.jar",
     "mods/optigui-2.3.0-beta.6+1.21.jar",
-    "mods/paginatedadvancements-2.5.1.jar"
+    "mods/paginatedadvancements-2.5.1.jar",
+    "mods/watermedia-3.0.0.15.jar",
+    "mods/wm_binaries-3.0.0-rc.1.jar"
 ) | ForEach-Object { [void]$excludedPackPaths.Add($_) }
 
 foreach ($excluded in $ExcludePackPaths) {

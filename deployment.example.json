@@ -2,12 +2,33 @@
   "githubUsername": "yarnobachmann",
   "repoName": "EenAllesKanaalSMP-modpack-Season-3",
   "pagesRoot": "root",
-  "packUrl": "https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/pack.toml",
-  "instanceName": "EenAllesKanaal SMP Season 3",
-  "minecraftVersion": "1.21.1",
-  "loader": "neoforge",
-  "loaderVersion": "21.1.227",
-  "memoryMb": 6144,
-  "iconFile": "modpack icon.png",
-  "iconKey": "eak-season-3"
+  "defaultVariant": "full",
+  "variants": {
+    "full": {
+      "instanceName": "EenAllesKanaal SMP Season 3",
+      "minecraftVersion": "1.21.1",
+      "loader": "neoforge",
+      "loaderVersion": "21.1.227",
+      "memoryMb": 6144,
+      "iconFile": "modpack icon.png",
+      "iconKey": "eak-season-3",
+      "packRoot": ".",
+      "packUrl": "https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/pack.toml",
+      "publishedZipPath": "EenAllesKanaal-SMP-Season-3-1.0.0-prism.zip",
+      "distFolder": "dist"
+    },
+    "lite": {
+      "instanceName": "EenAllesKanaal SMP Season 3 Lite",
+      "minecraftVersion": "1.21.1",
+      "loader": "neoforge",
+      "loaderVersion": "21.1.227",
+      "memoryMb": 6144,
+      "iconFile": "modpack icon lite.png",
+      "iconKey": "eak-season-3-lite",
+      "packRoot": "lite",
+      "packUrl": "https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/lite/pack.toml",
+      "publishedZipPath": "lite/EenAllesKanaal-SMP-Season-3-Lite-1.0.0-prism.zip",
+      "distFolder": "dist/lite"
+    }
+  }
 }

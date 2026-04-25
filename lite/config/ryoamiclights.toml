@@ -1,0 +1,185 @@
+[light_sources]
+	water_sensitive_check = true
+	self = true
+	block_entities = true
+	entities = true
+
+			[light_sources.settings.entities.minecraft]
+				panda = true
+				bee = true
+				axolotl = true
+				egg = true
+				zoglin = true
+				arrow = true
+				cow = true
+				magma_cube = true
+				pig = true
+				allay = true
+				skeleton = true
+				llama = true
+				mule = true
+				bat = true
+				frog = true
+				husk = true
+				hoglin = true
+				armadillo = true
+				camel = true
+				rabbit = true
+				armor_stand = true
+				happy_ghast = true
+				drowned = true
+				experience_orb = true
+				creaking = true
+				dolphin = true
+				item = true
+				turtle = true
+				salmon = true
+				wandering_trader = true
+				wither_skeleton = true
+				piglin_brute = true
+				goat = true
+				breeze = true
+				item_frame = true
+				horse = true
+				vindicator = true
+				phantom = true
+				minecart = true
+				evoker = true
+				mooshroom = true
+				llama_spit = true
+				glow_squid = true
+				glow_item_frame = true
+				squid = true
+				parrot = true
+				creeper = true
+				lightning_bolt = true
+				enderman = true
+				copper_golem = true
+				chicken = true
+				sniffer = true
+				ravager = true
+				trader_llama = true
+				donkey = true
+				bogged = true
+				chest_minecart = true
+				tropical_fish = true
+				fox = true
+				slime = true
+				pillager = true
+				iron_golem = true
+				zombified_piglin = true
+				piglin = true
+				cat = true
+				zombie = true
+				guardian = true
+				ghast = true
+				sheep = true
+				player = true
+				pufferfish = true
+				potion = true
+				wolf = true
+				villager = true
+				skeleton_horse = true
+				zombie_villager = true
+				tnt_minecart = true
+				elder_guardian = true
+				boat = true
+				strider = true
+				polar_bear = true
+				painting = true
+				cave_spider = true
+				cod = true
+				witch = true
+				snow_golem = true
+				spider = true
+
+			[light_sources.settings.entities.crittersandcompanions]
+				dragonfly = true
+				leaf_insect = true
+				jumping_spider = true
+				shima_enaga = true
+				koi_fish = true
+				dumbo_octopus = true
+				ferret = true
+				otter = true
+				sea_bunny = true
+
+			[light_sources.settings.entities.eternalnether]
+				wither_skeleton_horse = true
+
+			[light_sources.settings.entities.ars_nouveau]
+				wilden_guardian = true
+				wilden_hunter = true
+				starbuncle = true
+				spell_proj = true
+				gift_starby = true
+				wilden_stalker = true
+				alakarkinos = true
+				drygmy = true
+				orbit = true
+				whirlisprig = true
+
+			[light_sources.settings.entities.block_factorys_bosses]
+				dragon_guard_sword = true
+				sword_wave = true
+				infernal_dragon = true
+				frozen_skeleton = true
+				yeti = true
+				pile_of_bones = true
+				blazing_fire_ball = true
+				fire_area = true
+
+			[light_sources.settings.entities.goblintraders]
+				vein_goblin_trader = true
+				goblin_trader = true
+
+			[light_sources.settings.entities.create_bic_bit]
+				herring = true
+
+			[light_sources.settings.entities.create]
+				stationary_contraption = true
+				package = true
+
+			[light_sources.settings.entities.twilightforest]
+				deer = true
+				dwarf_rabbit = true
+				hedge_spider = true
+				death_tome = true
+				raven = true
+				redcap = true
+				kobold = true
+				hostile_wolf = true
+				mosquito_swarm = true
+				boar = true
+				squirrel = true
+				armored_giant = true
+				tiny_bird = true
+				giant_miner = true
+				naga = true
+				swarm_spider = true
+				bighorn_sheep = true
+				rising_zombie = true
+
+			[light_sources.settings.entities.friendsandfoes]
+				copper_golem = true
+				glare = true
+				illusioner = true
+				moobloom = true
+				mauler = true
+				iceologer = true
+				crab = true
+				rascal = true
+
+			[light_sources.settings.entities.lootr]
+				lootr_minecart = true
+				item_frame = true
+
+			[light_sources.settings.entities.illagerinvasion]
+				hatchet = true
+				sorcerer = true
+				alchemist = true
+				archivist = true
+				provoker = true
+				basher = true
+				necromancer = true
+				marauder = true

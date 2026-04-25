@@ -1,108 +1,125 @@
-﻿# EenAllesKanaal SMP Season 3 Packwiz Modpack
+# EenAllesKanaal SMP Season 3 Packwiz Modpack
 
-This repository contains the self-hosted packwiz version of the EenAllesKanaal SMP Season 3 Minecraft modpack. It is prepared for static hosting with GitHub Pages and for Prism Launcher imports that run `packwiz-installer-bootstrap.jar` before launch.
+This repository hosts the self-updating packwiz version of the EenAllesKanaal SMP Season 3 modpack for Prism Launcher.
+
+It now supports two published variants from one repo:
+
+- `full`: the main pack
+- `lite`: a lighter client variant with a reduced resource pack set, no shaderpacks, and no Iris or Distant Horizons
 
 ## Pack details
 
 - Minecraft: `1.21.1`
 - Loader: `NeoForge`
-- NeoForge version in this pack: `21.1.227`
-- Public pack entry point: `pack.toml`
+- NeoForge version: `21.1.227`
 
-The exact NeoForge version was not detectable from the original folder, so `21.1.227` was selected from NeoForge's 1.21.1 Maven metadata. If your existing Prism instance uses a different NeoForge build, update both `pack.toml` and `deployment.json` or `deployment.example.json`.
+## Hosted URLs
+
+### Full
+
+- Pack URL:  
+  `https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/pack.toml`
+- Prism zip URL:  
+  `https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/EenAllesKanaal-SMP-Season-3-1.0.0-prism.zip`
+
+### Lite
+
+- Pack URL:  
+  `https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/lite/pack.toml`
+- Prism zip URL:  
+  `https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/lite/EenAllesKanaal-SMP-Season-3-Lite-1.0.0-prism.zip`
 
 ## GitHub Pages publishing
 
-1. Push this folder to GitHub:
+1. Push the repository to GitHub.
+2. In GitHub, open `Settings -> Pages`.
+3. Set the source to `Deploy from a branch`.
+4. Publish branch `main` from `/root`.
+5. Keep `.nojekyll` in the repository root.
 
-   ```powershell
-   git init
-   git branch -M main
-   git remote add origin https://github.com/yarnobachmann/EenAllesKanaalSMP-modpack-Season-3.git
-   git add .
-   git commit -m "Create packwiz modpack"
-   git push -u origin main
-   ```
+Because both variants live in the same repository, GitHub Pages can serve them at the same time.
 
-2. In GitHub, open the repository settings.
-3. Go to Pages.
-4. Choose either:
-   - Source: `Deploy from a branch`, branch `main`, folder `/root`
-   - Or publish from `/docs` if you later move the pack files there.
-5. Keep `.nojekyll` in the publishing root.
+## Prism Launcher
 
-When published from the repository root, the hosted pack URL should be:
-
-```text
-https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/pack.toml
-```
-
-## Prism Launcher zip
-
-A Prism/MultiMC-compatible import zip is generated in `dist/`. It contains:
+Each generated Prism zip contains:
 
 - `instance.cfg`
 - `mmc-pack.json`
 - `packwiz-installer-bootstrap.jar`
 
-The instance pre-launch command is:
+The instance pre-launch command uses the hosted `pack.toml` URL for the chosen variant.
 
-```text
-"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/pack.toml
+The generated instances are configured with:
+
+- `6144 MB` RAM
+- a custom pack icon
+- automatic updates on launch through `packwiz-installer-bootstrap.jar`
+
+## Build scripts
+
+### Build full
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\build-prism-zip.ps1 -Variant full
 ```
 
-The zip sets the instance memory to `6144 MB` and includes the modpack icon from `modpack icon.png`.
+### Build lite
 
-For Prism's `Import from zip` URL field, use the direct zip URL:
-
-```text
-https://yarnobachmann.github.io/EenAllesKanaalSMP-modpack-Season-3/EenAllesKanaal-SMP-Season-3-1.0.0-prism.zip
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\build-prism-zip.ps1 -Variant lite
 ```
 
-Do not use the plain site root URL as the Prism import URL.
+### Build both
 
-Edit `deployment.json` if you want to override the example values. If `deployment.json` does not exist, the build script uses `deployment.example.json`.
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\build-all-variants.ps1
+```
+
+### Refresh only
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\refresh-pack.ps1 -PackRoot .
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\refresh-pack.ps1 -PackRoot lite
+```
+
+### Regenerate lite files from the main pack
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\sync-lite.ps1
+```
+
+## Lite variant rules
+
+The lite pack is generated from the main pack with these differences:
+
+- keeps only these resource packs:
+  - `EAK.zip`
+  - `Fast Better Grass.zip`
+  - `LowOnFire*.zip`
+- excludes all shaderpacks
+- excludes:
+  - `DistantHorizons`
+  - `Iris`
 
 ## Updating the pack later
 
-1. Add, remove, or update files in `mods`, `config`, `resourcepacks`, `shaderpacks`, `datapacks`, `defaultconfigs`, or `kubejs`.
-2. For new public mods, prefer adding them with packwiz after installing packwiz:
+For normal updates:
+
+1. Add, remove, or update files in the main pack.
+2. Rebuild:
 
    ```powershell
-   packwiz modrinth add <project>
+   powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\build-all-variants.ps1
    ```
 
-3. Refresh the index:
+3. Commit and push the changed files.
 
-   ```powershell
-   powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\refresh-pack.ps1
-   ```
+The hosted `pack.toml` URLs stay the same. Existing Prism installs that use `packwiz-installer-bootstrap.jar` will keep updating from the same URL on launch.
 
-4. Rebuild the Prism zip if the bootstrap package changed:
+## Deployment config
 
-   ```powershell
-   powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\build-prism-zip.ps1
-   ```
+Variant settings live in:
 
-5. Commit and push the changed files.
+[deployment.example.json](<C:/Users/minej/Desktop/EenAllesKanaal SMP Season 3 1.0.0/deployment.example.json>)
 
-## Installing packwiz
-
-`packwiz` was not installed on this machine during setup. Download it from:
-
-```text
-https://github.com/packwiz/packwiz/releases
-```
-
-Put `packwiz.exe` somewhere on PATH, then run:
-
-```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\setup-packwiz.ps1
-```
-
-## Notes
-
-- Most jars were matched to Modrinth by exact SHA-512 hash and have `.pw.toml` metadata.
-- Jars that could not be matched automatically are still indexed as local files, so they will be downloaded from your GitHub Pages site.
-- CurseForge exact matching could not be completed without CurseForge API credentials; unresolved jars are listed in `codex-report.md`.
-- `.gitignore` ignores matched local jar copies while keeping the unresolved jars that must be hosted by this repository.
+Create `deployment.json` if you want local overrides without editing the example file.

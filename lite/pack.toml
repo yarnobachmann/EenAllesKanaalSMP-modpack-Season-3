@@ -1,0 +1,14 @@
+name = "EenAllesKanaal SMP Season 3 Lite"
+author = "EenAllesKanaal SMP"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "fe526f80f99f610dc95f06894d6c5098761664e625d6dd2c25538e3bcbd72d3c"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.227"
+

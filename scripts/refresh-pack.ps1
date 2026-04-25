@@ -1,11 +1,24 @@
+param(
+    [string]$PackRoot = ".",
+    [string[]]$ExcludePackPaths = @()
+)
+
 $ErrorActionPreference = "Stop"
 
-$Root = Split-Path -Parent $PSScriptRoot
-Set-Location $Root
+$RepoRoot = Split-Path -Parent $PSScriptRoot
+$PackRootPath = if ($PackRoot -eq ".") {
+    $RepoRoot
+} else {
+    Join-Path $RepoRoot $PackRoot
+}
+
+if (-not (Test-Path -LiteralPath $PackRootPath -PathType Container)) {
+    throw "Pack root not found: $PackRoot"
+}
 
 function ConvertTo-PackPath {
     param([string]$Path)
-    $fullRoot = (Resolve-Path -LiteralPath $Root).Path.TrimEnd("\", "/")
+    $fullRoot = (Resolve-Path -LiteralPath $PackRootPath).Path.TrimEnd("\", "/")
     $fullPath = (Resolve-Path -LiteralPath $Path).Path
     $relative = $fullPath.Substring($fullRoot.Length).TrimStart("\", "/")
     return ($relative -replace "\\", "/")
@@ -23,7 +36,7 @@ function Set-Utf8NoBom {
     )
     $Value = $Value -replace "`r`n", "`n"
     $encoding = New-Object System.Text.UTF8Encoding($false)
-    [System.IO.File]::WriteAllText((Join-Path $Root $Path), $Value, $encoding)
+    [System.IO.File]::WriteAllText((Join-Path $PackRootPath $Path), $Value, $encoding)
 }
 
 function Add-IndexedFile {
@@ -44,8 +57,9 @@ function Add-IndexedFile {
     })
 }
 
-if (-not (Test-Path ".\pack.toml")) {
-    throw "pack.toml is missing. Create it before refreshing the index."
+$packTomlPath = Join-Path $PackRootPath "pack.toml"
+if (-not (Test-Path -LiteralPath $packTomlPath -PathType Leaf)) {
+    throw "pack.toml is missing at $PackRoot\pack.toml"
 }
 
 $indexed = [System.Collections.Generic.List[object]]::new()
@@ -53,35 +67,27 @@ $managedModJars = [System.Collections.Generic.HashSet[string]]::new([System.Stri
 $excludedPackPaths = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
 
 @(
-    "mods/animatica-0-6-1-1-21.pw.toml",
     "mods/animatica-0.6.1+1.21.jar",
-    "mods/capes-1-5-4-1-21-fabric.pw.toml",
     "mods/capes-1.5.4+1.21-fabric.jar",
-    "mods/citresewn-1-2-2-1-21.pw.toml",
     "mods/citresewn-1.2.2+1.21.jar",
-    "mods/citresewn-neopatcher-1-1-0-1-2-2.pw.toml",
     "mods/citresewn_neopatcher-1.1.0-1.2.2.jar",
-    "mods/connector-2-0-0-beta-12-1-21-1-full.pw.toml",
-    "mods/connector-2.0.0-beta.12+1.21.1-full.jar",
-    "mods/connectorextras-1-12-1-1-21-1.pw.toml",
+    "mods/connector-2.0.0-beta.14+1.21.1-full.jar",
     "mods/ConnectorExtras-1.12.1+1.21.1.jar",
-    "mods/enhancedblockentities-0-10-2-1-21.pw.toml",
     "mods/enhancedblockentities-0.10.2+1.21.jar",
-    "mods/fabric-api-0-116-10-1-21-1.pw.toml",
     "mods/fabric-api-0.116.10+1.21.1.jar",
-    "mods/fabric-language-kotlin-1-13-0-kotlin-2-1-0.pw.toml",
     "mods/fabric-language-kotlin-1.13.0+kotlin.2.1.0.jar",
-    "mods/fabrishot-1-14-1.pw.toml",
     "mods/fabrishot-1.14.1.jar",
-    "mods/main-menu-credits-1-2-0.pw.toml",
     "mods/main-menu-credits-1.2.0.jar",
-    "mods/morechathistory-1-3-1.pw.toml",
     "mods/morechathistory-1.3.1.jar",
-    "mods/optigui-2-3-0-beta-6-1-21.pw.toml",
     "mods/optigui-2.3.0-beta.6+1.21.jar",
-    "mods/paginatedadvancements-2-5-1.pw.toml",
     "mods/paginatedadvancements-2.5.1.jar"
 ) | ForEach-Object { [void]$excludedPackPaths.Add($_) }
+
+foreach ($excluded in $ExcludePackPaths) {
+    if (-not [string]::IsNullOrWhiteSpace($excluded)) {
+        [void]$excludedPackPaths.Add(($excluded -replace "\\", "/"))
+    }
+}
 
 function Test-PackPathExcluded {
     param([string]$Path)
@@ -89,23 +95,26 @@ function Test-PackPathExcluded {
     return $excludedPackPaths.Contains($packPath)
 }
 
-Get-ChildItem -Path ".\mods" -Filter "*.pw.toml" -File -ErrorAction SilentlyContinue | Sort-Object FullName | ForEach-Object {
-    if (Test-PackPathExcluded $_.FullName) {
-        return
+$modsPath = Join-Path $PackRootPath "mods"
+if (Test-Path -LiteralPath $modsPath -PathType Container) {
+    Get-ChildItem -LiteralPath $modsPath -Filter "*.pw.toml" -File -ErrorAction SilentlyContinue | Sort-Object FullName | ForEach-Object {
+        if (Test-PackPathExcluded $_.FullName) {
+            return
+        }
+        $content = Get-Content -Raw -LiteralPath $_.FullName
+        if ($content -match '(?m)^filename\s*=\s*"([^"]+)"') {
+            [void]$managedModJars.Add($Matches[1])
+        }
+        Add-IndexedFile -Files $indexed -Path $_.FullName -Metafile $true
     }
-    $content = Get-Content -Raw -LiteralPath $_.FullName
-    if ($content -match '(?m)^filename\s*=\s*"([^"]+)"') {
-        [void]$managedModJars.Add($Matches[1])
-    }
-    Add-IndexedFile -Files $indexed -Path $_.FullName -Metafile $true
-}
 
-Get-ChildItem -Path ".\mods" -Filter "*.jar" -File -ErrorAction SilentlyContinue | Sort-Object FullName | ForEach-Object {
-    if (Test-PackPathExcluded $_.FullName) {
-        return
-    }
-    if (-not $managedModJars.Contains($_.Name)) {
-        Add-IndexedFile -Files $indexed -Path $_.FullName -Metafile $false
+    Get-ChildItem -LiteralPath $modsPath -Filter "*.jar" -File -ErrorAction SilentlyContinue | Sort-Object FullName | ForEach-Object {
+        if (Test-PackPathExcluded $_.FullName) {
+            return
+        }
+        if (-not $managedModJars.Contains($_.Name)) {
+            Add-IndexedFile -Files $indexed -Path $_.FullName -Metafile $false
+        }
     }
 }
 
@@ -119,8 +128,9 @@ $contentDirs = @(
 )
 
 foreach ($dir in $contentDirs) {
-    if (Test-Path -LiteralPath ".\$dir" -PathType Container) {
-        Get-ChildItem -LiteralPath ".\$dir" -File -Recurse | Sort-Object FullName | ForEach-Object {
+    $dirPath = Join-Path $PackRootPath $dir
+    if (Test-Path -LiteralPath $dirPath -PathType Container) {
+        Get-ChildItem -LiteralPath $dirPath -File -Recurse | Sort-Object FullName | ForEach-Object {
             Add-IndexedFile -Files $indexed -Path $_.FullName -Metafile $false
         }
     }
@@ -133,11 +143,11 @@ $rootFiles = @(
 )
 
 foreach ($file in $rootFiles) {
-    Add-IndexedFile -Files $indexed -Path ".\$file" -Metafile $false
+    Add-IndexedFile -Files $indexed -Path (Join-Path $PackRootPath $file) -Metafile $false
 }
 
 $lines = [System.Collections.Generic.List[string]]::new()
-$lines.Add("hash-format = `"sha256`"")
+$lines.Add('hash-format = "sha256"')
 $lines.Add("")
 
 foreach ($entry in ($indexed | Sort-Object file)) {
@@ -151,14 +161,14 @@ foreach ($entry in ($indexed | Sort-Object file)) {
 $indexText = $lines -join "`n"
 Set-Utf8NoBom -Path "index.toml" -Value $indexText
 
-$indexHash = Get-Sha256 ".\index.toml"
-$packText = Get-Content -Raw -LiteralPath ".\pack.toml"
+$indexHash = Get-Sha256 (Join-Path $PackRootPath "index.toml")
+$packText = Get-Content -Raw -LiteralPath $packTomlPath
 if ($packText -match '(?s)(\[index\].*?hash\s*=\s*")[^"]+(")') {
     $packText = [regex]::Replace($packText, '(?s)(\[index\].*?hash\s*=\s*")[^"]+(")', "`${1}$indexHash`${2}", 1)
 } else {
-    throw "Could not find [index] hash in pack.toml."
+    throw "Could not find [index] hash in $PackRoot\pack.toml."
 }
 Set-Utf8NoBom -Path "pack.toml" -Value $packText
 
-Write-Host "Indexed $($indexed.Count) files."
+Write-Host "Indexed $($indexed.Count) files for $PackRoot."
 Write-Host "index.toml sha256: $indexHash"

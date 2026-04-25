@@ -1,7 +1,11 @@
+param(
+    [string]$Variant
+)
+
 $ErrorActionPreference = "Stop"
 
-$Root = Split-Path -Parent $PSScriptRoot
-Set-Location $Root
+$RepoRoot = Split-Path -Parent $PSScriptRoot
+Set-Location $RepoRoot
 
 function Read-DeploymentConfig {
     $configPath = ".\deployment.json"
@@ -14,8 +18,39 @@ function Read-DeploymentConfig {
     return Get-Content -Raw -LiteralPath $configPath | ConvertFrom-Json
 }
 
+function Resolve-VariantConfig {
+    param(
+        [object]$DeploymentConfig,
+        [string]$RequestedVariant
+    )
+
+    if ($DeploymentConfig.PSObject.Properties.Name -contains "variants") {
+        $variantName = $RequestedVariant
+        if ([string]::IsNullOrWhiteSpace($variantName)) {
+            $variantName = $DeploymentConfig.defaultVariant
+        }
+        if ([string]::IsNullOrWhiteSpace($variantName)) {
+            $variantName = "full"
+        }
+        $variantConfig = $DeploymentConfig.variants.$variantName
+        if ($null -eq $variantConfig) {
+            throw "Variant '$variantName' was not found in deployment config."
+        }
+        return [pscustomobject]@{
+            Name = $variantName
+            Config = $variantConfig
+        }
+    }
+
+    return [pscustomobject]@{
+        Name = "full"
+        Config = $DeploymentConfig
+    }
+}
+
 function Get-PackVersion {
-    $packText = Get-Content -Raw -LiteralPath ".\pack.toml"
+    param([string]$PackRootPath)
+    $packText = Get-Content -Raw -LiteralPath (Join-Path $PackRootPath "pack.toml")
     if ($packText -match '(?m)^version\s*=\s*"([^"]+)"') {
         return $Matches[1]
     }
@@ -32,9 +67,20 @@ function Set-Utf8NoBom {
     [System.IO.File]::WriteAllText($Path, $Value, $encoding)
 }
 
-& "$PSScriptRoot\refresh-pack.ps1"
+$deployment = Read-DeploymentConfig
+$variantInfo = Resolve-VariantConfig -DeploymentConfig $deployment -RequestedVariant $Variant
+$variantName = $variantInfo.Name
+$config = $variantInfo.Config
 
-$config = Read-DeploymentConfig
+$packRoot = if ([string]::IsNullOrWhiteSpace($config.packRoot)) { "." } else { [string]$config.packRoot }
+$packRootPath = if ($packRoot -eq ".") { $RepoRoot } else { Join-Path $RepoRoot $packRoot }
+
+if ($variantName -eq "lite") {
+    & "$PSScriptRoot\sync-lite.ps1"
+}
+
+& "$PSScriptRoot\refresh-pack.ps1" -PackRoot $packRoot
+
 $instanceName = $config.instanceName
 $minecraftVersion = $config.minecraftVersion
 $loaderVersion = $config.loaderVersion
@@ -42,6 +88,8 @@ $packUrl = $config.packUrl
 $memoryMb = $config.memoryMb
 $iconFile = $config.iconFile
 $iconKey = $config.iconKey
+$publishedZipPath = $config.publishedZipPath
+$distFolder = if ([string]::IsNullOrWhiteSpace($config.distFolder)) { "dist" } else { [string]$config.distFolder }
 
 if ([string]::IsNullOrWhiteSpace($instanceName)) { throw "instanceName is missing from deployment config." }
 if ([string]::IsNullOrWhiteSpace($minecraftVersion)) { throw "minecraftVersion is missing from deployment config." }
@@ -50,8 +98,8 @@ if ([string]::IsNullOrWhiteSpace($packUrl)) { throw "packUrl is missing from dep
 if (-not $memoryMb) { $memoryMb = 6144 }
 if ([string]::IsNullOrWhiteSpace($iconKey)) { $iconKey = "eak-season-3" }
 
-$dist = Join-Path $Root "dist"
-$stagingRoot = Join-Path $dist "prism-staging"
+$dist = Join-Path $RepoRoot $distFolder
+$stagingRoot = Join-Path $dist "prism-staging-$variantName"
 $minecraftRoot = Join-Path $stagingRoot "minecraft"
 $bootstrapPath = Join-Path $minecraftRoot "packwiz-installer-bootstrap.jar"
 
@@ -74,7 +122,7 @@ MaxMemAlloc=$memoryMb
 Set-Utf8NoBom -Path (Join-Path $stagingRoot "instance.cfg") -Value $instanceCfg
 
 if (-not [string]::IsNullOrWhiteSpace($iconFile)) {
-    $iconPath = Join-Path $Root $iconFile
+    $iconPath = Join-Path $RepoRoot $iconFile
     if (Test-Path -LiteralPath $iconPath -PathType Leaf) {
         Copy-Item -LiteralPath $iconPath -Destination (Join-Path $stagingRoot "$iconKey.png") -Force
     } else {
@@ -104,13 +152,29 @@ $bootstrapUrl = "https://github.com/packwiz/packwiz-installer-bootstrap/releases
 Invoke-WebRequest -Uri $bootstrapUrl -OutFile $bootstrapPath
 
 $safeName = ($instanceName -replace '[^A-Za-z0-9._-]+', '-').Trim("-")
-$version = Get-PackVersion
+$version = Get-PackVersion -PackRootPath $packRootPath
 $zipPath = Join-Path $dist "$safeName-$version-prism.zip"
 if (Test-Path $zipPath) {
     Remove-Item -LiteralPath $zipPath -Force
 }
 
 $stagingFiles = Get-ChildItem -LiteralPath $stagingRoot -Force
+if (-not (Test-Path -LiteralPath $dist -PathType Container)) {
+    New-Item -ItemType Directory -Force -Path $dist | Out-Null
+}
 Compress-Archive -LiteralPath $stagingFiles.FullName -DestinationPath $zipPath -Force
+
+if (-not [string]::IsNullOrWhiteSpace($publishedZipPath)) {
+    $publishedZipFullPath = Join-Path $RepoRoot $publishedZipPath
+    $publishedDir = Split-Path -Parent $publishedZipFullPath
+    if (-not (Test-Path -LiteralPath $publishedDir -PathType Container)) {
+        New-Item -ItemType Directory -Force -Path $publishedDir | Out-Null
+    }
+    Copy-Item -LiteralPath $zipPath -Destination $publishedZipFullPath -Force
+}
+
 Remove-Item -LiteralPath $stagingRoot -Recurse -Force
 Write-Host "Created $zipPath"
+if (-not [string]::IsNullOrWhiteSpace($publishedZipPath)) {
+    Write-Host "Published zip copy at $publishedZipPath"
+}

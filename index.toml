@@ -2956,6 +2956,11 @@ hash = "49ebbfd3a79d29040bef196ae4be96cc2bca0a585901c43037ad8f3b392c7425"
 metafile = false
 
 [[files]]
+file = "mods/bwncr-neoforge-1.21.1-3.20.4.jar"
+hash = "a29a48365871fe95cabf0a1127136bba8584da6802386bf1bb81d893fd01b614"
+metafile = false
+
+[[files]]
 file = "mods/caelus-neoforge-7.0.1+1.21.1.jar"
 hash = "432a645557f29de159d9edde2fd109f8e3b32ff30895b4fede04ee5f1a1a682f"
 metafile = false
@@ -2998,11 +3003,6 @@ metafile = false
 [[files]]
 file = "mods/configurable-3.4.0+1.21.1-neoforge.jar"
 hash = "4f77d5d3bc4322a30b1171e9dab2bf2fed36f87f1d92ddd7a8017c0b558bcb9b"
-metafile = false
-
-[[files]]
-file = "mods/connector-2.0.0-beta.14+1.21.1-full.jar"
-hash = "a79817f1076e2e6499b0ab09c4e8c032d04b071341b66d036c3d96112804e51b"
 metafile = false
 
 [[files]]
@@ -3146,6 +3146,11 @@ hash = "5616f6e9286ad0ca6173623199d56aa27a77d2a8181a2624a609836ea32e3444"
 metafile = false
 
 [[files]]
+file = "mods/CreativeCore_NEOFORGE_v2.13.37_mc1.21.1.jar"
+hash = "5ea72f852ad17ee5ce88bee0405b80bed31ee0bb02a4f557013e3a6c463edb60"
+metafile = false
+
+[[files]]
 file = "mods/cristellib-neoforge-1.21.1-3.0.3.jar"
 hash = "f5ada4fe5a4a8ba9f8800a54f9ae6fe5a7a4d1156ada6567d11d45e3c3b02239"
 metafile = false
@@ -3173,6 +3178,11 @@ metafile = false
 [[files]]
 file = "mods/discord_chat_mod-neoforge-1.21.1-2.6.2.jar"
 hash = "bcd94cd7090043bc365ccc8282775e9a3376658bc3fb5f4cbf7e75982d3cf224"
+metafile = false
+
+[[files]]
+file = "mods/DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar"
+hash = "ffe8da15ac4deedcf1eb306b0a49d6f5ba1a8385d0119bf1475e5c358f16f855"
 metafile = false
 
 [[files]]
@@ -3976,6 +3986,21 @@ hash = "1d3cc0668f3aaad383e2f0940c14c8c7d278ff6f71332afbac6d368a2438bedc"
 metafile = false
 
 [[files]]
+file = "mods/waterframes.pw.toml"
+hash = "ccbf06496c31803f028a82690086e12726c163f2f9d1da7813a2469ef759ac89"
+metafile = true
+
+[[files]]
+file = "mods/watermedia-3.0.0.15.jar"
+hash = "1aeb557cf5b2837a3e0621417126ac9854a1a0acb06310a57406024fe3f89a20"
+metafile = false
+
+[[files]]
+file = "mods/watervision.pw.toml"
+hash = "30ce5af1a7b294632faa21de8626e1cfcb06265c52b35472969cbc8a36a8a7b0"
+metafile = true
+
+[[files]]
 file = "mods/waystones-neoforge-1.21.1-21.1.30.jar"
 hash = "9b4ccf9e5811ecdebdb0acbf3f3ee3f525df0ab9c1fe9ae3e3ee7c9f52288099"
 metafile = false
@@ -3984,6 +4009,11 @@ metafile = false
 file = "mods/WI-Zoom-1.6-MC1.21.1-NeoForge.jar"
 hash = "e603af2004d71bcb0b42e339c9297fd164219c608c02d32d76a1ac5988473d5f"
 metafile = false
+
+[[files]]
+file = "mods/wm-binaries.pw.toml"
+hash = "b21b5bc5a8950904683483ceec0a90cbf064cdc9c1ad5d468249f8080df504df"
+metafile = true
 
 [[files]]
 file = "mods/xaerominimap-neoforge-1.21.1-25.3.10.jar"

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "nl.eak.ceiponderfix.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ExperienceSceneMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

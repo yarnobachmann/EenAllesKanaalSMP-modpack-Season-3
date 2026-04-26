@@ -67,6 +67,27 @@ function Set-Utf8NoBom {
     [System.IO.File]::WriteAllText($Path, $Value, $encoding)
 }
 
+function Resolve-BootstrapSource {
+    param([string]$RepoRootPath)
+
+    $repoCache = Join-Path $RepoRootPath ".cache\packwiz-installer-bootstrap.jar"
+    if (Test-Path -LiteralPath $repoCache -PathType Leaf) {
+        return $repoCache
+    }
+
+    $prismInstances = Join-Path $env:APPDATA "PrismLauncher\instances"
+    if (Test-Path -LiteralPath $prismInstances -PathType Container) {
+        $existing = Get-ChildItem -LiteralPath $prismInstances -Recurse -Filter "packwiz-installer-bootstrap.jar" -ErrorAction SilentlyContinue |
+            Sort-Object LastWriteTime -Descending |
+            Select-Object -First 1
+        if ($null -ne $existing) {
+            return $existing.FullName
+        }
+    }
+
+    return $null
+}
+
 $deployment = Read-DeploymentConfig
 $variantInfo = Resolve-VariantConfig -DeploymentConfig $deployment -RequestedVariant $Variant
 $variantName = $variantInfo.Name
@@ -154,7 +175,12 @@ $mmcPack = [ordered]@{
 Set-Utf8NoBom -Path (Join-Path $stagingRoot "mmc-pack.json") -Value ($mmcPack | ConvertTo-Json -Depth 5)
 
 $bootstrapUrl = "https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar"
-Invoke-WebRequest -Uri $bootstrapUrl -OutFile $bootstrapPath
+$bootstrapSource = Resolve-BootstrapSource -RepoRootPath $RepoRoot
+if ($null -ne $bootstrapSource) {
+    Copy-Item -LiteralPath $bootstrapSource -Destination $bootstrapPath -Force
+} else {
+    Invoke-WebRequest -Uri $bootstrapUrl -OutFile $bootstrapPath
+}
 
 $safeName = ($instanceName -replace '[^A-Za-z0-9._-]+', '-').Trim("-")
 $version = Get-PackVersion -PackRootPath $packRootPath

@@ -2966,6 +2966,11 @@ hash = "432a645557f29de159d9edde2fd109f8e3b32ff30895b4fede04ee5f1a1a682f"
 metafile = false
 
 [[files]]
+file = "mods/cei-ponder-fix-1.0.0.jar"
+hash = "4d539add71cb7ae6f4c10d77199fde484e3b640de3a9b38028d985339f6d67e7"
+metafile = false
+
+[[files]]
 file = "mods/chatanimation-neoforge-1.21.1-1.1.3.jar"
 hash = "2830e1699ccf66d618376abf2bc756a4763096b2f31b4812c452822e86860b13"
 metafile = false

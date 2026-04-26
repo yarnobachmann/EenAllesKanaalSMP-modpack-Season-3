@@ -10,3 +10,4 @@ mods/watermedia-3.0.0.15.jar
 mods/waterframes-NEOFORGE-mc1.21.1-v2.1.22.jar
 mods/watervision-NF-mc1.21.1-v0.1.0-alpha.jar
 mods/wm_binaries-3.0.0-rc.1.jar
+patchmods/**/build/

@@ -1761,11 +1761,6 @@ hash = "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0"
 metafile = false
 
 [[files]]
-file = "config/fancymenu/options.txt"
-hash = "73fc3bdcef76817f22d4bcd5abc0c5f23d79917da04697853e544a63d4ac7a5d"
-metafile = false
-
-[[files]]
 file = "config/fancymenu/slideshows/mySlideshow/images/background.png"
 hash = "7f56383272ed1489ab18222fcbab5b47a8db0bdadd2a9732ce92a6df23c4e51a"
 metafile = false
@@ -3706,6 +3701,11 @@ hash = "4cc35fa22e5d703d5c0bbd405a1ef81acfc1d0349314977743a7c103f10ff7fe"
 metafile = false
 
 [[files]]
+file = "mods/netherportalfix-neoforge-1.21.1-21.1.1.jar"
+hash = "242267afa324352130adb2263a5667e421c6f4c573ad0dfe0565971255ea5a1e"
+metafile = false
+
+[[files]]
 file = "mods/NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar"
 hash = "866ac9a47afcd829bdb03890b5d8f80bb4c6f47332c64717b6e909bee51337b6"
 metafile = false
@@ -4093,11 +4093,6 @@ metafile = false
 [[files]]
 file = "mods/YungsMenuTweaks-1.21.1-NeoForge-2.1.2.jar"
 hash = "a6487691e22cb3405256453d2496ee74aae824ae865b0ec57654380686993a53"
-metafile = false
-
-[[files]]
-file = "options.txt"
-hash = "896df8a596c38f6b648c2b62de8790d674ca4e745456c788aefa5b770183afba"
 metafile = false
 
 [[files]]

@@ -50,6 +50,10 @@ function Add-IndexedFile {
         return
     }
 
+    if (Test-PackPathExcluded $Path) {
+        return
+    }
+
     $Files.Add([pscustomobject]@{
         file = ConvertTo-PackPath $Path
         hash = Get-Sha256 $Path
@@ -67,6 +71,7 @@ $managedModJars = [System.Collections.Generic.HashSet[string]]::new([System.Stri
 $excludedPackPaths = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
 
 @(
+    "config/fancymenu/options.txt",
     "mods/animatica-0.6.1+1.21.jar",
     "mods/capes-1.5.4+1.21-fabric.jar",
     "mods/citresewn-1.2.2+1.21.jar",
@@ -139,7 +144,6 @@ foreach ($dir in $contentDirs) {
 }
 
 $rootFiles = @(
-    "options.txt",
     "optionsof.txt",
     "servers.dat"
 )

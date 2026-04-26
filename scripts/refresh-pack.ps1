@@ -71,7 +71,6 @@ $managedModJars = [System.Collections.Generic.HashSet[string]]::new([System.Stri
 $excludedPackPaths = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
 
 @(
-    "config/fancymenu/options.txt",
     "mods/animatica-0.6.1+1.21.jar",
     "mods/capes-1.5.4+1.21-fabric.jar",
     "mods/citresewn-1.2.2+1.21.jar",

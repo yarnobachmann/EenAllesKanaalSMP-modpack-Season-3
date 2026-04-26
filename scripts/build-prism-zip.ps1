@@ -121,6 +121,11 @@ MaxMemAlloc=$memoryMb
 "@
 Set-Utf8NoBom -Path (Join-Path $stagingRoot "instance.cfg") -Value $instanceCfg
 
+$defaultOptionsPath = Join-Path $RepoRoot "options.txt"
+if (Test-Path -LiteralPath $defaultOptionsPath -PathType Leaf) {
+    Copy-Item -LiteralPath $defaultOptionsPath -Destination (Join-Path $minecraftRoot "options.txt") -Force
+}
+
 if (-not [string]::IsNullOrWhiteSpace($iconFile)) {
     $iconPath = Join-Path $RepoRoot $iconFile
     if (Test-Path -LiteralPath $iconPath -PathType Leaf) {

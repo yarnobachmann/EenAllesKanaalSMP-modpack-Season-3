@@ -1756,6 +1756,11 @@ hash = "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0"
 metafile = false
 
 [[files]]
+file = "config/fancymenu/options.txt"
+hash = "73fc3bdcef76817f22d4bcd5abc0c5f23d79917da04697853e544a63d4ac7a5d"
+metafile = false
+
+[[files]]
 file = "config/fancymenu/slideshows/mySlideshow/images/background.png"
 hash = "7f56383272ed1489ab18222fcbab5b47a8db0bdadd2a9732ce92a6df23c4e51a"
 metafile = false

@@ -4,7 +4,7 @@ license="MIT"
 
 [[mods]]
 modId="cei_ponder_fix"
-version="1.0.0"
+version="1.0.0-r1"
 displayName="CEI Ponder Fix"
 authors="OpenAI Codex"
 description='''Disables the broken Create Enchantment Industry experience Ponder scenes.'''

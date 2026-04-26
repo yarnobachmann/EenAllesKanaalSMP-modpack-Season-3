@@ -2951,8 +2951,8 @@ hash = "432a645557f29de159d9edde2fd109f8e3b32ff30895b4fede04ee5f1a1a682f"
 metafile = false
 
 [[files]]
-file = "mods/cei-ponder-fix-1.0.0.jar"
-hash = "4d539add71cb7ae6f4c10d77199fde484e3b640de3a9b38028d985339f6d67e7"
+file = "mods/cei-ponder-fix-1.0.0-r1.jar"
+hash = "c9c9e841a93adca9e3abc56767934ab34f54b356603bb03bb695b4996bfb7832"
 metafile = false
 
 [[files]]

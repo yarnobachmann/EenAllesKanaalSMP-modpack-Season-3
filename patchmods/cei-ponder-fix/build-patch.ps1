@@ -66,7 +66,7 @@ $javaFiles = Get-ChildItem -Path $srcJava -Recurse -Filter *.java | ForEach-Obje
 
 Copy-Item -Path (Join-Path $srcResources "*") -Destination $classesDir -Recurse -Force
 
-$jarPath = Join-Path $libsDir "cei-ponder-fix-1.0.0.jar"
+$jarPath = Join-Path $libsDir "cei-ponder-fix-1.0.0-r1.jar"
 if (Test-Path $jarPath) {
     Remove-Item $jarPath -Force
 }

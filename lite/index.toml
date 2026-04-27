@@ -3766,6 +3766,11 @@ hash = "305c828c171a5b52867b56686665b525bcf286018496ece81f376806794ba914"
 metafile = false
 
 [[files]]
+file = "mods/quicksand-2.0.0.jar"
+hash = "c44896a2ed03e1c739ebddb7f8302090866d0253d31f6646e8900ec2f133740c"
+metafile = false
+
+[[files]]
 file = "mods/ranged_weapon_api-neoforge-2.3.3+1.21.1.jar"
 hash = "49f439f6b771aeecebeeacc1e920761ba75a8da6ce71026e18412af06ec66405"
 metafile = false

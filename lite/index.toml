@@ -3366,6 +3366,11 @@ hash = "4e5cc1438087b0bc0276969e88b9ad0bdf2bcc60d6caf5fe79e18947d7a29050"
 metafile = false
 
 [[files]]
+file = "mods/GatewaysToEternity-1.21.1-5.1.0.jar"
+hash = "5e4f87781e045e67492c0589b1062504df76ca33215ab0358fc8e4a1be5efac5"
+metafile = false
+
+[[files]]
 file = "mods/geckolib-neoforge-1.21.1-4.8.4.jar"
 hash = "a1b6ce25e8627aa7e748672eedb6b71af68e0993462313649c259f38e42bcac9"
 metafile = false

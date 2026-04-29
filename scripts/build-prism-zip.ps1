@@ -107,6 +107,7 @@ $minecraftVersion = $config.minecraftVersion
 $loaderVersion = $config.loaderVersion
 $packUrl = $config.packUrl
 $memoryMb = $config.memoryMb
+$jvmArgs = if ($config.PSObject.Properties.Name -contains "jvmArgs") { [string]$config.jvmArgs } else { "" }
 $iconFile = $config.iconFile
 $iconKey = $config.iconKey
 $publishedZipPath = $config.publishedZipPath
@@ -140,6 +141,15 @@ OverrideMemory=true
 MinMemAlloc=$memoryMb
 MaxMemAlloc=$memoryMb
 "@
+
+if (-not [string]::IsNullOrWhiteSpace($jvmArgs)) {
+    $instanceCfg += @"
+
+OverrideJavaArgs=true
+JvmArgs=$jvmArgs
+"@
+}
+
 Set-Utf8NoBom -Path (Join-Path $stagingRoot "instance.cfg") -Value $instanceCfg
 
 $defaultOptionsPath = Join-Path $RepoRoot "options.txt"

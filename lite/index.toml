@@ -3491,11 +3491,6 @@ hash = "6c6975312ce119c937c8c5aabe3b8de226a341308790d746afead7b86c1754b6"
 metafile = false
 
 [[files]]
-file = "mods/ketkets-furnicraft-4.4.jar"
-hash = "3bb2cb43aae8bba59b20e5e260d9f1f934ca9fa42999281b30056d6be4ba3852"
-metafile = false
-
-[[files]]
 file = "mods/konkrete_neoforge_1.9.9_MC_1.21.jar"
 hash = "791c5538751dd3015ef3a2ce92d98719e1a28a48ebbd817b78506771256654cd"
 metafile = false

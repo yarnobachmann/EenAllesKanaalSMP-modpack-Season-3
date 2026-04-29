@@ -3731,6 +3731,11 @@ hash = "8749c6fdda659335e50116c18e012cdf8699b3789859c82559af2c6f425c93ae"
 metafile = false
 
 [[files]]
+file = "mods/observable-5.4.4.jar"
+hash = "f344b47b58f4fd48d1aa95ee4d5c16252b5e5bd39f829fabc96b27097202d2e5"
+metafile = false
+
+[[files]]
 file = "mods/ObsidianUI-neoforge-0.2.9+mc1.21.1.jar"
 hash = "de8a9039a5c0b4148470ec8f19d531f14ef309e573c4464907db2cf70584fcff"
 metafile = false

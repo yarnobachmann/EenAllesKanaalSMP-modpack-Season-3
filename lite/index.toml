@@ -2956,6 +2956,11 @@ hash = "432a645557f29de159d9edde2fd109f8e3b32ff30895b4fede04ee5f1a1a682f"
 metafile = false
 
 [[files]]
+file = "mods/cbbees-1.3.3.jar"
+hash = "15e3d89728fb7c242098c43dfcd7574ffc7a4548ef22c3b55409a713718bfefb"
+metafile = false
+
+[[files]]
 file = "mods/cei-ponder-fix-1.0.0-r1.jar"
 hash = "c9c9e841a93adca9e3abc56767934ab34f54b356603bb03bb695b4996bfb7832"
 metafile = false
@@ -2991,6 +2996,11 @@ hash = "b524ccdace2ef8fd19f5b2074f7de1103ac5065c52553f064c00e098346c293e"
 metafile = false
 
 [[files]]
+file = "mods/cmverticaladditions-neoforge-1.0.0.jar"
+hash = "b07bae832df2ec42347dcd97f37dff0c51afcd3d5d8327a4446c2b00e0868d18"
+metafile = false
+
+[[files]]
 file = "mods/collective-1.21.1-8.20.jar"
 hash = "cf192da39ba0d02a151a324b22c073a194dc177c789ec287a357152b7eedce9e"
 metafile = false
@@ -3021,8 +3031,18 @@ hash = "1cd0007d427be712d303f5a6f8084c67a2635f02e686e8c9c824cc1dcfdfa272"
 metafile = false
 
 [[files]]
+file = "mods/copycats-3.0.4+mc.1.21.1-neoforge.jar"
+hash = "8480e2a62eaa625f75776831c1d8a9ef3d77d2d816fa2e67566c6ec25ba745d1"
+metafile = false
+
+[[files]]
 file = "mods/create_bic_bit-1.0.2C.jar"
 hash = "9e3846da4988b79e0c2284081f08e7b2afe9b8ba37e9b7187c54fd01ffd6e79b"
+metafile = false
+
+[[files]]
+file = "mods/create_blaze_burner_fuels-1.0.2-neoforge-1.21.1.jar"
+hash = "69235a1ddd64fa7a37c898258b45ef90ed204b9626c48b73b3ed2d8aa614103e"
 metafile = false
 
 [[files]]
@@ -3121,8 +3141,23 @@ hash = "6bd60393cf582568a09aa38f82fe6ea6e5928659d7befc6b0ee9f46025179064"
 metafile = false
 
 [[files]]
+file = "mods/creategolemsgalore-0.2.0.jar"
+hash = "325191634759a266ced07c3606a58ae11c074151842be0915b972eb2ad45f0b9"
+metafile = false
+
+[[files]]
 file = "mods/createhorsepower-1.21.1-1.1.0.jar"
 hash = "b54a100bb428e6da897b37376075f0d73e9e454a43713ff29793f2c66dc69a15"
+metafile = false
+
+[[files]]
+file = "mods/CreateLazyTick-2.4.9-6.0.x-neoforge-1.21.1.jar"
+hash = "5650aaf4b01c500844048d58e8c0ff21dc63e32809867588efb4ef60d9638c62"
+metafile = false
+
+[[files]]
+file = "mods/createmechanicalcompanion-1.9-neoforge-1.21.1.jar"
+hash = "06b216b06ef400fe573303a6acbfb5e599474a61c8fd329356397c69b6f4a2ef"
 metafile = false
 
 [[files]]
@@ -3148,6 +3183,11 @@ metafile = false
 [[files]]
 file = "mods/createsifter-1.21.1-2.2.1.jar"
 hash = "5616f6e9286ad0ca6173623199d56aa27a77d2a8181a2624a609836ea32e3444"
+metafile = false
+
+[[files]]
+file = "mods/createthreadedtrains-neoforge-1.21.1-1.0.0.jar"
+hash = "cac002b0fb77ec1dd48cf76a07dd5f2341b632788e1add768cf5c555823e4b38"
 metafile = false
 
 [[files]]

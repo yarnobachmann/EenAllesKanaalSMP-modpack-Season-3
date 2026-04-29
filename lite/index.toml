@@ -3426,6 +3426,11 @@ hash = "8029cc554dcee66ba779a0db7b043aa75942adf1768a8d5cd5cf90dbcb526975"
 metafile = false
 
 [[files]]
+file = "mods/Glodium-1.21-2.2-neoforge.jar"
+hash = "369e99753df0bdc90a38a8c52df4abb37baf6b18c6ca130af4c7bc75fb160a85"
+metafile = false
+
+[[files]]
 file = "mods/glow_up-neoforge-1.2.1-1.21-1.21.1-neoforge.jar"
 hash = "2340086d5db6c6145000a9084a8ae9112a969ccd1555daf716366a067566592b"
 metafile = false

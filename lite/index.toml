@@ -2116,6 +2116,11 @@ hash = "3da1c4e9563da2ae49f10eb2feaf716fc5b101768bfe3be2d5916b8c1cf79a86"
 metafile = false
 
 [[files]]
+file = "config/memorysweep.json5"
+hash = "400a5406b49525787b78a7beef2f79c2187ad25fcf2cfab34b567f02a2ac4222"
+metafile = false
+
+[[files]]
 file = "config/midnightcontrols.json"
 hash = "4b6c9eab4ea1915b4573a23d58483ff630a9c4073b6574b426f427b37a414b4a"
 metafile = false
@@ -3673,6 +3678,11 @@ metafile = false
 [[files]]
 file = "mods/melody_neoforge_1.0.10_MC_1.21.jar"
 hash = "6b973a4564703c531fc0eae09db08b07a38091e0a743c687b8d2049457e84871"
+metafile = false
+
+[[files]]
+file = "mods/memorysweep-1.21.1-1.1.2-neoforge.jar"
+hash = "e2dece254976a2d9663316b679e155c237fd7ba7c55af85659d5ad0513daeb44"
 metafile = false
 
 [[files]]

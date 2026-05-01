@@ -2806,6 +2806,11 @@ hash = "69da8640b4e4c165fef85678a8f0fe9afcc9b88dcf070117b43986e1bc87463b"
 metafile = false
 
 [[files]]
+file = "mods/AdvancedAE-1.6.11-1.21.1.jar"
+hash = "891e1f8ee0f3ac1bbce03fc2848b761f9c52bea4533eb3419ae849582e15ced7"
+metafile = false
+
+[[files]]
 file = "mods/AdvancementPlaques-1.21.1-neoforge-1.6.8.jar"
 hash = "a24674330b8de59a02e0ebe4dd81fcff15d90e8c1cdcc32980d73c1cab050933"
 metafile = false
@@ -2968,6 +2973,11 @@ metafile = false
 [[files]]
 file = "mods/cei-ponder-fix-1.0.0-r1.jar"
 hash = "c9c9e841a93adca9e3abc56767934ab34f54b356603bb03bb695b4996bfb7832"
+metafile = false
+
+[[files]]
+file = "mods/chat_heads-0.15.1-neoforge-1.21.jar"
+hash = "b1ed6a52efa3cb43e4c37e3982bc7b08116302511b8f675346f6aea6d3524e41"
 metafile = false
 
 [[files]]

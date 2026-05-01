@@ -2836,6 +2836,11 @@ hash = "30d80a662bd7cda0576ae15d6f594a8449ccf33cc10ff21d49e278f8f4be99e9"
 metafile = false
 
 [[files]]
+file = "mods/alltheleaks-1.1.8+1.21.1-neoforge.jar"
+hash = "166624c4a978fd1c8f4ad68b07a19d89c1496911450faed4df137c67e1676611"
+metafile = false
+
+[[files]]
 file = "mods/Apotheosis-1.21.1-8.5.2.jar"
 hash = "63c8e7096f7a57a3256137ea9d15753901a1b031979adcb8b894955c274e52f0"
 metafile = false

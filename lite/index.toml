@@ -3731,11 +3731,6 @@ hash = "6b973a4564703c531fc0eae09db08b07a38091e0a743c687b8d2049457e84871"
 metafile = false
 
 [[files]]
-file = "mods/MemorySweep-1.21.1-neoforge-2.0.3-fix.jar"
-hash = "d4bb02bcf9d035f64c720d02ebe7888d485329a6b5b03e6c29448f5d48cf2969"
-metafile = false
-
-[[files]]
 file = "mods/midnightcontrols-neoforge-1.10.0.1.jar"
 hash = "1196fd45888a4cfa2ba9ebeeb9e0a809f64e90c73363b26d291cdfcc85b47b89"
 metafile = false

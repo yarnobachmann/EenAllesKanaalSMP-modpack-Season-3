@@ -3571,11 +3571,6 @@ hash = "a3d840a5bbc5dc117d991b929962d78ae1ad0ac427cf4c7f5ca9de33bea854cf"
 metafile = false
 
 [[files]]
-file = "mods/JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar"
-hash = "b320b47f1791f56df9e1a05138f0e312e6e54541945ff15f2f1fd398cd1d4d9d"
-metafile = false
-
-[[files]]
 file = "mods/just-hammers-neoforge-21.1.4.jar"
 hash = "59487c8758fd762fcddc58e3b5e8a956de3f6a2115cd1c6f9a915939f5f985d8"
 metafile = false

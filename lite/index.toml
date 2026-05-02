@@ -3091,6 +3091,11 @@ hash = "a91714404b5c8c7cb192afd0a447af2234fe2ba73ee32a209bdd026362518cbb"
 metafile = false
 
 [[files]]
+file = "mods/colorfulhearts-neoforge-1.21.1-10.5.9.jar"
+hash = "332a7f3df1274cabeae05e9361c41561c42a670787adc7e4b6795961b4721401"
+metafile = false
+
+[[files]]
 file = "mods/configurable-3.5.1+1.21.1-neoforge.jar"
 hash = "c430e3f0c81348b87b9eec29a7996c317c1a85c94d9256e68ff194031b258559"
 metafile = false

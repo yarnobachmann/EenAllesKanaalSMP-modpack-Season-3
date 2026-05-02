@@ -58,6 +58,7 @@ $resourcepackPatternsToKeep = @(
 $modsToExclude = @(
     "DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar",
     "iris-neoforge-1.8.12+mc1.21.1.jar",
+    "iris-flywheel-compat-NeoForge-2.3.0.jar",
     "waterframes-NEOFORGE-mc1.21.1-v2.1.22.jar",
     "watermedia-3.0.0.15.jar",
     "watervision-NF-mc1.21.1-v0.1.0-alpha.jar",
@@ -213,3 +214,4 @@ $litePage = @"
 Set-Utf8NoBom -Path (Join-Path $LiteRoot "index.html") -Value $litePage
 
 Write-Host "Synced lite pack into $LiteRoot"
+

@@ -2881,6 +2881,11 @@ hash = "a24674330b8de59a02e0ebe4dd81fcff15d90e8c1cdcc32980d73c1cab050933"
 metafile = false
 
 [[files]]
+file = "mods/ae2jeiintegration-1.2.1.jar"
+hash = "2989c5d762d3f14a58b4db6519daaff81e719dff3445a2b39328948ac23e548b"
+metafile = false
+
+[[files]]
 file = "mods/ae2wtlib-19.4.1.jar"
 hash = "30d80a662bd7cda0576ae15d6f594a8449ccf33cc10ff21d49e278f8f4be99e9"
 metafile = false

@@ -4056,6 +4056,11 @@ hash = "c6f028fcf66cc500e26aa809b532b322f84d6acbc770b34a79359ec4ed6f4d2e"
 metafile = false
 
 [[files]]
+file = "mods/soundsbegone-1.3.5.jar"
+hash = "dc6416dd792560c87be21e77915b7c614648995a17a9188c74816429537ce3e4"
+metafile = false
+
+[[files]]
 file = "mods/Stellarity-3.0.6.1.jar"
 hash = "71bc26dd6e698fd1adeda82b79bc954c52f4a105b6abeaef41537506ad2afca8"
 metafile = false

@@ -2946,6 +2946,11 @@ hash = "e634a3f0c39cd38007608cce1974a7c9bbad7d8202bfb6c75f17c2901f362c9b"
 metafile = false
 
 [[files]]
+file = "mods/ars_janky_me_source_jar_compat-0.1.0.jar"
+hash = "f2a92ba0581466978aa7b72086777def8be21a1bd6ae640583240bcc505db422"
+metafile = false
+
+[[files]]
 file = "mods/ars_nouveau-1.21.1-5.11.3.jar"
 hash = "91f5e1556957ebe204d6c6818ebdf0dc56ce03ad9ad01ecbf6f6bb0154dfbb37"
 metafile = false

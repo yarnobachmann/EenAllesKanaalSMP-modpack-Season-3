@@ -118,7 +118,6 @@ foreach ($pattern in $resourcepackPatternsToKeep) {
 }
 
 Copy-Tree -SourceRoot $RepoRoot -DestinationRoot $LiteRoot -IncludeFiles @(
-    "options.txt",
     "servers.dat"
 )
 

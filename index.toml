@@ -1381,6 +1381,21 @@ hash = "1a3bee95a96f082b8e97cccbce30c1efe1352b616c78e06d5884fd4475668add"
 metafile = false
 
 [[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "3d55101a1fb374cd5308ddc11f2782d7bb2b547969b243a5748f09ab1b93dc90"
+metafile = false
+
+[[files]]
+file = "config/defaultoptions/options.txt"
+hash = "79eca2d818c1f2f47ae3d9e152b47725d86fac5663eca4adc68f096f8f7c5277"
+metafile = false
+
+[[files]]
+file = "config/defaultoptions/servers.dat"
+hash = "fcfef75dd87ec2a10d13bfa5464f93f3ca1ffac67830903daaa2f71150130c16"
+metafile = false
+
+[[files]]
 file = "config/discord_chat_mod-client.toml"
 hash = "8d868fa168987cd7f2f4412638ef039b6eb1345dd83cb15d7cf939f7f5d257ff"
 metafile = false
@@ -3226,6 +3241,11 @@ hash = "b54a100bb428e6da897b37376075f0d73e9e454a43713ff29793f2c66dc69a15"
 metafile = false
 
 [[files]]
+file = "mods/createjeicompat-1.0.2.jar"
+hash = "c431ed193256a8faa2fe83e324ae3f2dcc3bd8b457b69436fa2767da37034a07"
+metafile = false
+
+[[files]]
 file = "mods/CreateLazyTick-2.4.9-6.0.x-neoforge-1.21.1.jar"
 hash = "5650aaf4b01c500844048d58e8c0ff21dc63e32809867588efb4ef60d9638c62"
 metafile = false
@@ -3288,6 +3308,11 @@ metafile = false
 [[files]]
 file = "mods/cwb-neoforge-3.0.0+mc1.21.jar"
 hash = "be7144647bc160858e659f6793fcce993914443b9256c2df0369b1c616a2a5d4"
+metafile = false
+
+[[files]]
+file = "mods/defaultoptions-neoforge-1.21.1-21.1.6.jar"
+hash = "f24d26b30c7ddb0cbbb0a359f7609ee3cfaae9340964cf5f6e78d1a551224d4f"
 metafile = false
 
 [[files]]
@@ -3588,6 +3613,11 @@ metafile = false
 [[files]]
 file = "mods/jamlib-neoforge-1.3.6+1.21.1.jar"
 hash = "911afdfe717a2375a651253e282ac9e769f8bead381d33c2167955c25eefe514"
+metafile = false
+
+[[files]]
+file = "mods/jei-1.21.1-neoforge-19.27.0.340.jar"
+hash = "8aaf547432f1b4958239b036356b910692fe40f858c3073d996f56bbf7c99826"
 metafile = false
 
 [[files]]
@@ -3958,11 +3988,6 @@ metafile = false
 [[files]]
 file = "mods/ritchiesprojectilelib-2.1.2+mc.1.21.1-neoforge.jar"
 hash = "cc509060833736fb650aa4c36b1ce33a7eeeb9ca6e9f8e80a7c951c9e7487b24"
-metafile = false
-
-[[files]]
-file = "mods/RoughlyEnoughItems-16.0.799-neoforge.jar"
-hash = "dae9610fd6da7bbd55c7836fcce4bb25e86e7bd000d383c9caa54b506141e2ee"
 metafile = false
 
 [[files]]

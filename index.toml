@@ -1382,12 +1382,12 @@ metafile = false
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "3d55101a1fb374cd5308ddc11f2782d7bb2b547969b243a5748f09ab1b93dc90"
+hash = "d7b850193e05853f0cac2c4e6c5837e0b90669f57b4893f082c65005f8aec7ec"
 metafile = false
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "79eca2d818c1f2f47ae3d9e152b47725d86fac5663eca4adc68f096f8f7c5277"
+hash = "13369b3dad5761a61a56e3b461cada57ed037ab5b7f2d4803aa61403801d1199"
 metafile = false
 
 [[files]]

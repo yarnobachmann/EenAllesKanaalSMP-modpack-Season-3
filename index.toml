@@ -3596,6 +3596,11 @@ hash = "0d1326fb8b67623ae1c69a63b788dcdcecaf8df400c7d8e5e55ace79a5166fe5"
 metafile = false
 
 [[files]]
+file = "mods/iris-flywheel-compat-NeoForge-2.3.0.jar"
+hash = "5d627b1cf89fdeb403862d30284ddf13e180316ac7364de56d3f568449667d6c"
+metafile = false
+
+[[files]]
 file = "mods/iris-neoforge-1.8.12+mc1.21.1.jar"
 hash = "3e3f94d2d5cdcb8145c4385d521974aa2d8669b2cc212351f70cf06488182e83"
 metafile = false

@@ -2821,11 +2821,6 @@ hash = "a24674330b8de59a02e0ebe4dd81fcff15d90e8c1cdcc32980d73c1cab050933"
 metafile = false
 
 [[files]]
-file = "mods/ae2jeiintegration-1.2.1.jar"
-hash = "2989c5d762d3f14a58b4db6519daaff81e719dff3445a2b39328948ac23e548b"
-metafile = false
-
-[[files]]
 file = "mods/ae2wtlib-19.4.1.jar"
 hash = "30d80a662bd7cda0576ae15d6f594a8449ccf33cc10ff21d49e278f8f4be99e9"
 metafile = false
@@ -3033,16 +3028,6 @@ metafile = false
 [[files]]
 file = "mods/connector-2.0.0-beta.14+1.21.1-full.jar"
 hash = "a79817f1076e2e6499b0ab09c4e8c032d04b071341b66d036c3d96112804e51b"
-metafile = false
-
-[[files]]
-file = "mods/ConnectorExtras-1.12.1+1.21.1.jar"
-hash = "ee89c3425b9a4bff766aaff02ccf8110c06f5da6ef5d71974556885cf25d4880"
-metafile = false
-
-[[files]]
-file = "mods/continuity-3.0.0+1.21.neoforge.jar"
-hash = "4cc0a4a09ae09c64bb567e42381652b700f9cade5067a75e83115662cc475f0a"
 metafile = false
 
 [[files]]
@@ -3526,28 +3511,13 @@ hash = "911afdfe717a2375a651253e282ac9e769f8bead381d33c2167955c25eefe514"
 metafile = false
 
 [[files]]
-file = "mods/jei-1.21.1-neoforge-19.27.0.340.jar"
-hash = "8aaf547432f1b4958239b036356b910692fe40f858c3073d996f56bbf7c99826"
-metafile = false
-
-[[files]]
 file = "mods/jumpoverfences-neoforge-1.21.1-1.6.1.jar"
 hash = "a3d840a5bbc5dc117d991b929962d78ae1ad0ac427cf4c7f5ca9de33bea854cf"
 metafile = false
 
 [[files]]
-file = "mods/justenoughbreeding-neoforge-1.21-1.21.1-1.6.2.jar"
-hash = "4857ff49f674dac569495eb6cd4252cf5bb075c0c2566923b44be434c4c401d2"
-metafile = false
-
-[[files]]
 file = "mods/JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar"
 hash = "b320b47f1791f56df9e1a05138f0e312e6e54541945ff15f2f1fd398cd1d4d9d"
-metafile = false
-
-[[files]]
-file = "mods/JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar"
-hash = "7a47d69b5530704690d5a5f0726cd74a2d6c57df17dd4a8589c4ab5212f91460"
 metafile = false
 
 [[files]]
@@ -4073,11 +4043,6 @@ metafile = false
 [[files]]
 file = "mods/waystones-neoforge-1.21.1-21.1.30.jar"
 hash = "9b4ccf9e5811ecdebdb0acbf3f3ee3f525df0ab9c1fe9ae3e3ee7c9f52288099"
-metafile = false
-
-[[files]]
-file = "mods/WI-Zoom-1.6-MC1.21.1-NeoForge.jar"
-hash = "e603af2004d71bcb0b42e339c9297fd164219c608c02d32d76a1ac5988473d5f"
 metafile = false
 
 [[files]]

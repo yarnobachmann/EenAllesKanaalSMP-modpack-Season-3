@@ -2946,6 +2946,11 @@ hash = "e634a3f0c39cd38007608cce1974a7c9bbad7d8202bfb6c75f17c2901f362c9b"
 metafile = false
 
 [[files]]
+file = "mods/ars_elemental-1.21.1-0.7.9.3.jar"
+hash = "722174201d863e6ff46b5d7fd820d58a0d9adde5fed2da228950f5d6d0a5cfd2"
+metafile = false
+
+[[files]]
 file = "mods/ars_janky_me_source_jar_compat-0.1.0.jar"
 hash = "f2a92ba0581466978aa7b72086777def8be21a1bd6ae640583240bcc505db422"
 metafile = false

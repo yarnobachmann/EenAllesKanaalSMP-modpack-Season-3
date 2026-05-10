@@ -3166,8 +3166,8 @@ hash = "09a8d872fcb4ffc10adcbe1e1b9c45886fd3e06a14b60eb275dc695ca43a8e3f"
 metafile = false
 
 [[files]]
-file = "mods/create_things_and_misc-4.1.0-neoforge-1.21.1.jar"
-hash = "b215b7f55140b9f0f57d5ab3c40f5157c6e91c534ab9b92649b53e1eab11ecc0"
+file = "mods/create_things_and_misc-4.2.0-neoforge-1.21.1.jar"
+hash = "77fb799eee6ca4394bfc9696f1f3018f170baed16e56e51eb6a5b5c5bb77a164"
 metafile = false
 
 [[files]]

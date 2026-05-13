@@ -3826,6 +3826,11 @@ hash = "eb3b0bee79078ca0f9d39b20a8edd847384c287179478f99065c7d1eb95f4033"
 metafile = false
 
 [[files]]
+file = "mods/modonomicon-1.21.1-neoforge-1.120.1.jar"
+hash = "f5753e656ea6f200f3862d95a3ffab660470f09cdd222566b562aa3e465dd703"
+metafile = false
+
+[[files]]
 file = "mods/moogs_structures-neoforge-1.21.1-2.0.2.jar"
 hash = "b2a9168da6374cc04b64e3ad20c1d0b69c0a083198cce66bc9fca86643e3ae78"
 metafile = false
@@ -4093,6 +4098,11 @@ metafile = false
 [[files]]
 file = "mods/smallships-neoforge-1.21.1-2.0.0-b2.1.jar"
 hash = "423d81eaeccf32088ed0b42a3a1c0976695fa5ab99c2b6b1d4c5706537fcbf62"
+metafile = false
+
+[[files]]
+file = "mods/SmartBrainLib-neoforge-1.21.1-1.16.11.jar"
+hash = "68036561cc5511766d54cc0deabc3fc3a5e68f9e3db2478f2574ec82b494374b"
 metafile = false
 
 [[files]]

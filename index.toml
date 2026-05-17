@@ -2216,11 +2216,6 @@ hash = "9ebab727d4edca966d1a7275c82c143d2cbc24cd8ba6f67d9c53fcee8bf2b458"
 metafile = false
 
 [[files]]
-file = "config/moreculling.toml"
-hash = "508706adb9632951fccbd83fd62a2048dacebba49b5afcba8369e4078f1939fc"
-metafile = false
-
-[[files]]
 file = "config/MouseTweaks.cfg"
 hash = "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4"
 metafile = false
@@ -3888,11 +3883,6 @@ metafile = false
 [[files]]
 file = "mods/moonlight-neoforge-1.21.1-3.0.9.jar"
 hash = "81dbc81c4f327a61221f24bc8d9e353224db0b2a5a024baeed26d0a189509e4d"
-metafile = false
-
-[[files]]
-file = "mods/moreculling-neoforge-1.21.1-1.0.8.jar"
-hash = "a086b2157458e8e1214232a52a2a92924481fd3fd6620a61a4f23373b557e791"
 metafile = false
 
 [[files]]

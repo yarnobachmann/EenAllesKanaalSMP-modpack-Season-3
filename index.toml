@@ -3181,6 +3181,11 @@ hash = "13c1e6af9ad6101655340a3f112e48058d287e394d200db16c03fa4f3a5005ed"
 metafile = false
 
 [[files]]
+file = "mods/create_connected-1.1.16-mc1.21.1.jar"
+hash = "624415b891764ef57e6979520e0656f1b429f8b4ed69505aee91274c56c4a7fc"
+metafile = false
+
+[[files]]
 file = "mods/create_copper_and_zinc-2.0.0-neoforge-1.21.1.jar"
 hash = "1882e3102771ed2db4ba7f62c0b500d7a40e4d2c1823700c2fa55a75b77359f9"
 metafile = false

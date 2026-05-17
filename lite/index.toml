@@ -2201,11 +2201,6 @@ hash = "9ebab727d4edca966d1a7275c82c143d2cbc24cd8ba6f67d9c53fcee8bf2b458"
 metafile = false
 
 [[files]]
-file = "config/moreculling.toml"
-hash = "508706adb9632951fccbd83fd62a2048dacebba49b5afcba8369e4078f1939fc"
-metafile = false
-
-[[files]]
 file = "config/MouseTweaks.cfg"
 hash = "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4"
 metafile = false
@@ -2871,8 +2866,8 @@ hash = "2989c5d762d3f14a58b4db6519daaff81e719dff3445a2b39328948ac23e548b"
 metafile = false
 
 [[files]]
-file = "mods/ae2wtlib-19.4.1.jar"
-hash = "30d80a662bd7cda0576ae15d6f594a8449ccf33cc10ff21d49e278f8f4be99e9"
+file = "mods/ae2wtlib-19.5.0.jar"
+hash = "decf9a35c6d08c160a65a30fe623fd9c09ad5f5dd1790052917f19c82441bd16"
 metafile = false
 
 [[files]]
@@ -2968,6 +2963,11 @@ metafile = false
 [[files]]
 file = "mods/arseng-2.1.1-beta.jar"
 hash = "9e2b78101f08bf325589cb98ffba9d91171fdd76ba587d54bdef9d5de18080bc"
+metafile = false
+
+[[files]]
+file = "mods/artifacts-neoforge-13.2.1.jar"
+hash = "4a8e1f4d5702937a707861e478829695e432286bcd9e58f5834d82c6d998eea8"
 metafile = false
 
 [[files]]
@@ -3841,11 +3841,6 @@ hash = "47759081ab26271fed829f17abe1a8aa8ac1a17a111acb3b9255749e35e00f7a"
 metafile = false
 
 [[files]]
-file = "mods/moreculling-neoforge-1.21.1-1.0.7.jar"
-hash = "80e4716a3da53c920ce6e8d122332edc65b91c9f7e4d94bedacac9f35fe32aa0"
-metafile = false
-
-[[files]]
 file = "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar"
 hash = "68e6f4201c5de97b77929a7215c9552495696ca6a3bf3ae4eacc34e135f6cc8b"
 metafile = false
@@ -4091,8 +4086,8 @@ hash = "3b9155b2836d99856fab610c9e28e48724bc2f10c17d2529a6af55d476378390"
 metafile = false
 
 [[files]]
-file = "mods/sophisticatedcore-1.21.1-1.4.33.1808.jar"
-hash = "90cbba3bfee30fa23e38d52fb4609e41cf38b263d6f9098aa4b2814b1614dc0e"
+file = "mods/sophisticatedcore-1.21.1-1.4.39.1852.jar"
+hash = "8da96cee5dd093fc2eeb9e8f13510baa27347c1f4e5c39e64c051dc11dc20e90"
 metafile = false
 
 [[files]]

@@ -55,14 +55,14 @@ $resourcepackPatternsToKeep = @(
     "LowOnFire*.zip"
 )
 
-$modsToExclude = @(
-    "DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar",
-    "iris-neoforge-1.8.12+mc1.21.1.jar",
-    "iris-flywheel-compat-NeoForge-2.3.0.jar",
-    "waterframes-NEOFORGE-mc1.21.1-v2.1.22.jar",
-    "watermedia-3.0.0.15.jar",
-    "watervision-NF-mc1.21.1-v0.1.0-alpha.jar",
-    "wm_binaries-3.0.0-rc.1.jar"
+$modPatternsToExclude = @(
+    "DistantHorizons-*-1.21.1-fabric-neoforge.jar",
+    "iris-neoforge-*.jar",
+    "iris-flywheel-compat-NeoForge-*.jar",
+    "waterframes-NEOFORGE-*.jar",
+    "watermedia-*.jar",
+    "watervision-NF-*.jar",
+    "wm_binaries-*.jar"
 )
 
 $configsToExclude = @(
@@ -84,7 +84,14 @@ Get-ChildItem -LiteralPath (Join-Path $RepoRoot "mods") -Filter "*.pw.toml" -Fil
     }
 }
 Get-ChildItem -LiteralPath (Join-Path $RepoRoot "mods") -Filter "*.jar" -File | Sort-Object Name | ForEach-Object {
-    if ($modsToExclude -contains $_.Name) {
+    $excluded = $false
+    foreach ($pattern in $modPatternsToExclude) {
+        if ($_.Name -like $pattern) {
+            $excluded = $true
+            break
+        }
+    }
+    if ($excluded) {
         return
     }
     if ($managedModJars.Contains($_.Name)) {

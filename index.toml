@@ -3716,8 +3716,8 @@ hash = "ac827b62ce8fe71760208671b4a694e3ccd35049075f9406a751cffb5a5c9779"
 metafile = false
 
 [[files]]
-file = "mods/L_Ender's Cataclysm 1.21.1-3.28.jar"
-hash = "118d5f1781220a53d2ebaa31c1e293c5da45eed375402c1b2be796c51a8badce"
+file = "mods/L_Ender's Cataclysm 1.21.1-3.27.jar"
+hash = "fa4e8abd15aa86333d6a5fe20b05c4fe423ac865da7319be7808d321bcb3930c"
 metafile = false
 
 [[files]]
@@ -3946,6 +3946,11 @@ hash = "6d417b37268dd81cd06fe119017a763c240d49a3d20e590b0794749f4ab98b98"
 metafile = false
 
 [[files]]
+file = "mods/OctoLib-NEOFORGE-0.6.2+1.21.jar"
+hash = "92ba07d9d9e55a65421f3c3f203c72fe5149cb024d5277267e81d812e11a7f38"
+metafile = false
+
+[[files]]
 file = "mods/owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar"
 hash = "de6ed336bd80154b7241a7b3276694befc1c94550add8bcdfe7f82e5172fd13d"
 metafile = false
@@ -4038,6 +4043,26 @@ metafile = false
 [[files]]
 file = "mods/refurbished_furniture-neoforge-1.21.1-1.0.22.jar"
 hash = "953a7840261eb79959769a97caa60cba2ee141700a4cbe208825268327136bdf"
+metafile = false
+
+[[files]]
+file = "mods/relics-1.21.1-0.12.6.jar"
+hash = "b82766eeb015d5db1bf25e55749df85fc565ba6d4baf91e3605a300cba7738af"
+metafile = false
+
+[[files]]
+file = "mods/reliquified_ars_nouveau-1.21.1-0.8.1.jar"
+hash = "bdcb07f27293260e0d0e4d24df782da0310a6d383aab2d84a02a2d105a078eaf"
+metafile = false
+
+[[files]]
+file = "mods/reliquified_lenders_cataclysm-1.21.1-0.1.1.jar"
+hash = "092abc16788a6ebc324ce923098285b1b0a704700c359fdf2d733e6f33535700"
+metafile = false
+
+[[files]]
+file = "mods/reliquified_twilight_forest-1.21.1-0.5.3.jar"
+hash = "2c89d7310c3809f77ece6cf0dd8583a7815409afb4db244de53245657456a9e3"
 metafile = false
 
 [[files]]

@@ -4021,21 +4021,6 @@ hash = "b82766eeb015d5db1bf25e55749df85fc565ba6d4baf91e3605a300cba7738af"
 metafile = false
 
 [[files]]
-file = "mods/reliquified_ars_nouveau-1.21.1-0.8.1.jar"
-hash = "bdcb07f27293260e0d0e4d24df782da0310a6d383aab2d84a02a2d105a078eaf"
-metafile = false
-
-[[files]]
-file = "mods/reliquified_lenders_cataclysm-1.21.1-0.1.1.jar"
-hash = "092abc16788a6ebc324ce923098285b1b0a704700c359fdf2d733e6f33535700"
-metafile = false
-
-[[files]]
-file = "mods/reliquified_twilight_forest-1.21.1-0.5.3.jar"
-hash = "2c89d7310c3809f77ece6cf0dd8583a7815409afb4db244de53245657456a9e3"
-metafile = false
-
-[[files]]
 file = "mods/resourcefullib-neoforge-1.21-3.0.12.jar"
 hash = "5e36f2c69de008dc5795f730c84ab767688f15c810944b585485349a0c911261"
 metafile = false

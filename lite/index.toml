@@ -3061,11 +3061,6 @@ hash = "432a645557f29de159d9edde2fd109f8e3b32ff30895b4fede04ee5f1a1a682f"
 metafile = false
 
 [[files]]
-file = "mods/cbbees-1.3.3.jar"
-hash = "15e3d89728fb7c242098c43dfcd7574ffc7a4548ef22c3b55409a713718bfefb"
-metafile = false
-
-[[files]]
 file = "mods/cei-ponder-fix-1.0.0-r1.jar"
 hash = "c9c9e841a93adca9e3abc56767934ab34f54b356603bb03bb695b4996bfb7832"
 metafile = false

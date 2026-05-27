@@ -2141,6 +2141,11 @@ hash = "9d0c0cd121c7a5c817e2e007860f683273cefa61d7127429083c22578fa2afbe"
 metafile = false
 
 [[files]]
+file = "config/defaultoptions/options.txt"
+hash = "5eb57ba985b3d474a2f23be6f0d1fadbcd1c4c179c1f289fc80179dfb22cefcb"
+metafile = false
+
+[[files]]
 file = "config/defaultoptions/servers.dat"
 hash = "fcfef75dd87ec2a10d13bfa5464f93f3ca1ffac67830903daaa2f71150130c16"
 metafile = false

@@ -1,0 +1,2 @@
+#- USED INTERNALLY! Stores whether is the first time opening the game.
+loadResources = false

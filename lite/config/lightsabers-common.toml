@@ -1,0 +1,47 @@
+#[======================================================================]
+#[1] Lightsabers attack damage percentage
+#By default, the lightsaber damage is 15, but you can vary the damage by decreasing or increasing the damage percentage from 0.1 to 5.0, that is, from 10% to 500%.
+# Default: 1.0
+# Range: 0.1 ~ 5.0
+lightsaberDamagePercentage = 1.0
+#[======================================================================]
+#[2] Whether to spawn spark particles when the lightsaber hit entities (default: true)
+spawnHitParticles = true
+#[======================================================================]
+#[3] !Legacy feature! Activate lightsabers with Right-Click + Shift (default: false)
+legacyLsActivation = false
+#[======================================================================]
+#[4] Enable Kyber crystal generation (default: true)
+generateKyberCrystal = true
+#[======================================================================]
+#[5] Force push activation distance
+# Default: 6
+# Range: 1 ~ 50
+forcePushDistance = 6
+#[======================================================================]
+#[6] Force pull activation distance
+# Default: 8
+# Range: 1 ~ 50
+forcePullDistance = 8
+#[======================================================================]
+#[7] Chance to disarm the target when pulling it with force
+# Default: 0.25
+# Range: 0.0 ~ 1.0
+disarmChance = 0.25
+#[======================================================================]
+#[8] Force grab activation distance
+# Default: 8
+# Range: 1 ~ 50
+forceGrabDistance = 8
+#[======================================================================]
+#[9] Dark side improvement
+#Pillagers no longer attack players with the dark effect 'Force Adept'
+friendlyPillagers = true
+#[======================================================================]
+#[10] Force Ability Icons
+#Replace force ability symbols with textured icons in the action bar.
+#Requires resource pack support for bitmap fonts.
+useTexturedIcons = true
+#[======================================================================]
+#[11] Enable developer mode (default: false)
+devMode = false

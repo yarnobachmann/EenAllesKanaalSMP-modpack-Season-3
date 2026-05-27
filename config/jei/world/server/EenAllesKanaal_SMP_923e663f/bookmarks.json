@@ -1,0 +1,18 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"create:shaft"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:steam_engine"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"apotheosis:gem","components":{"apotheosis:gem":"apotheosis:core/brawlers","apotheosis:purity":"perfect"}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ars_nouveau:caster_tome","components":{"ars_nouveau:tome_caster":{"spells":{"0":{"sound":{"sound":{"id":"ars_nouveau:tempestry_family"},"volume":1.69,"pitch":1.9},"recipe":["ars_nouveau:glyph_projectile","ars_nouveau:glyph_burst","ars_nouveau:glyph_sensitive","ars_nouveau:glyph_aoe","ars_nouveau:glyph_aoe","ars_nouveau:glyph_aoe","ars_nouveau:glyph_conjure_water","ars_nouveau:glyph_freeze","ars_nouveau:glyph_lightning","ars_nouveau:glyph_amplify"],"particleTimeline":{},"name":"Darkfira\u0027s Flash Freeze","color":{"id":"ars_nouveau:constant","r":25,"g":255,"b":255}}},"flavor_text":"Encases your enemies or friends in a tomb of ice. Guaranteed to leave them shocked and confused."},"minecraft:custom_name":"{\"color\":\"dark_purple\",\"italic\":true,\"text\":\"Darkfira\u0027s Flash Freeze\"}"}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:enchanted_book","components":{"minecraft:stored_enchantments":{"levels":{"nova_structures:conductivity_curse":1}}}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:enchanted_book","components":{"minecraft:stored_enchantments":{"levels":{"minecraft:infinity":1}}}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"apotheosis:gem","components":{"apotheosis:gem":"apotheosis:core/brawlers","apotheosis:purity":"flawless"}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ars_elemental:fire_caster_tome"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ars_elemental:water_caster_tome"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ars_elemental:air_caster_tome"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ars_elemental:earth_caster_tome"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ars_elemental:anima_caster_tome"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ars_elemental:manipulation_caster_tome"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"apotheosis:gem","components":{"apotheosis:gem":"apotheosis:core/breach","apotheosis:purity":"chipped"}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:enchanted_book","components":{"minecraft:stored_enchantments":{"levels":{"minecraft:impaling":10}}}},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

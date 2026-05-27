@@ -62,13 +62,17 @@ $modPatternsToExclude = @(
     "waterframes-NEOFORGE-*.jar",
     "watermedia-*.jar",
     "watervision-NF-*.jar",
-    "wm_binaries-*.jar"
+    "wm_binaries-*.jar",
+    "voxy-*.jar",
+    "sodiumoptionsapi-neoforge-*.jar"
 )
 
 $configsToExclude = @(
     "DistantHorizons.toml",
     "iris.properties",
-    "iris-excluded.json"
+    "iris-excluded.json",
+    "voxy-client.toml",
+    "voxy-config.json"
 )
 
 $modsDestination = Join-Path $LiteRoot "mods"

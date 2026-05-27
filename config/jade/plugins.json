@@ -1,7 +1,4 @@
 {
-  "enderchests": {
-    "hud": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -68,13 +65,6 @@
   "apothic_spawners": {
     "spawner": true
   },
-  "jade_access": {
-    "held_item": true,
-    "sign": true,
-    "block": true,
-    "entity": true,
-    "entity_variant": true
-  },
   "endertanks": {
     "hud.basic": true,
     "hud": true,
@@ -98,14 +88,9 @@
     "block_properties": false,
     "mod_name": true
   },
-  "apotheosis": {
-    "adventure": true
-  },
-  "apothic_enchanting": {
-    "ench": true
-  },
-  "balm": {
-    "jade": true
+  "extendedae": {
+    "jade_chamber": true,
+    "jade_wireless": true
   },
   "ae2": {
     "part_icon": true,
@@ -119,20 +104,6 @@
     "crafting_monitor": true,
     "part_name": true
   },
-  "ars_nouveau": {
-    "mob_jar": true
-  },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
-  "jadeaddons.lootr": {
-    "info": true
-  },
-  "shetiphiancore": {
-    "hud.rgb16": true,
-    "hud": true,
-    "hud.redstone": true
-  },
   "easy_villagers": {
     "villager": true,
     "converter": true,
@@ -140,11 +111,6 @@
   },
   "pipez": {
     "pipe": true
-  },
-  "twilightforest": {
-    "drying_rack": true,
-    "chiseled_bookshelf_spawner": true,
-    "quest_ram_wool": true
   },
   "waystones": {
     "waystone": true
@@ -161,5 +127,47 @@
     "main": true,
     "display.content": true,
     "display.status": true
+  },
+  "enderchests": {
+    "hud": true
+  },
+  "jade_access": {
+    "held_item": true,
+    "sign": true,
+    "block": true,
+    "entity": true,
+    "entity_variant": true
+  },
+  "apotheosis": {
+    "adventure": true
+  },
+  "occultism": {
+    "foliot": true,
+    "sacrificial": true
+  },
+  "apothic_enchanting": {
+    "ench": true
+  },
+  "balm": {
+    "jade": true
+  },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
+  },
+  "shetiphiancore": {
+    "hud.rgb16": true,
+    "hud": true,
+    "hud.redstone": true
+  },
+  "twilightforest": {
+    "drying_rack": true,
+    "chiseled_bookshelf_spawner": true,
+    "quest_ram_wool": true
   }
 }

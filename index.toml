@@ -4451,11 +4451,6 @@ hash = "1882e3102771ed2db4ba7f62c0b500d7a40e4d2c1823700c2fa55a75b77359f9"
 metafile = false
 
 [[files]]
-file = "mods/create_delete_and_repeat-1.2.0-neoforge-1.21.1.jar"
-hash = "db490245d4a7ddb0dcab8273b9bf92176a5a7b17c350e5b28c99cea3bd12a9ea"
-metafile = false
-
-[[files]]
 file = "mods/create_hypertube-0.4.0-COMPAT-NEOFORGE.jar"
 hash = "3ccc9cdcfa70e18c8a383b7c3e388d877dc979347bb49a8c813142aa9a662102"
 metafile = false

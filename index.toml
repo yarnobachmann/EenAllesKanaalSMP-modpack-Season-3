@@ -4511,6 +4511,11 @@ hash = "259a9b88d305780234bb2020359879406d74b945616d99a16871334d7aee1826"
 metafile = false
 
 [[files]]
+file = "mods/createcobblestone-1.4.10+neoforge-1.21.1-139.jar"
+hash = "6b6fadb3c53aed250fb3c1c9e6bd5b88ee03acf27e1c337b30dd96df1ab74b1f"
+metafile = false
+
+[[files]]
 file = "mods/CreateCompression-1.21.1-2.0.0.jar"
 hash = "554bd66d2a050a60bcce5294739c56ba29755e1aaf0cfe1f9669fca9b1122565"
 metafile = false

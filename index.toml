@@ -4081,11 +4081,6 @@ hash = "c433f3d831e86faa956836bf327ca00151bd813d1a8ab36aa064d518a58790f7"
 metafile = false
 
 [[files]]
-file = "config/YARL/packs/EAK.zip"
-hash = "2a5322f615917282bb4ddec427481be8d6a5a3d35e0f2b2a61882b8593561f4f"
-metafile = false
-
-[[files]]
 file = "config/YARL/packs/FA+All_Extensions-v1.8.1.zip"
 hash = "420ad586300bb4164ff441460ae0d1b2be68933cfd9321746fcef173c0437015"
 metafile = false

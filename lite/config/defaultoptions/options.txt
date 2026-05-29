@@ -48,8 +48,8 @@ mouseSensitivity:0.5
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","fabric","mod_resources","moonlight:merged_pack","file/LowOnFire v26.1§8.zip","file/FreshAnimations_v1.10.4.zip","file/FA+All_Extensions-v1.8.1.zip","file/-1.21.2 Fresh Moves v3.1 (With Animated Eyes).zip","file/EAK.zip","file/Fast Better Grass.zip","mod/accessorify:resourcepacks/1_21_1/rp"]
-incompatibleResourcePacks:["file/EAK.zip"]
+resourcePacks:["vanilla","fabric","mod_resources","moonlight:merged_pack","file/LowOnFire v26.1§8.zip","file/FreshAnimations_v1.10.4.zip","file/FA+All_Extensions-v1.8.1.zip","file/-1.21.2 Fresh Moves v3.1 (With Animated Eyes).zip","file/EAK-SMP.zip","file/Fast Better Grass.zip","mod/accessorify:resourcepacks/1_21_1/rp"]
+incompatibleResourcePacks:["file/EAK-SMP.zip"]
 lastServer:
 lang:en_us
 chatVisibility:0

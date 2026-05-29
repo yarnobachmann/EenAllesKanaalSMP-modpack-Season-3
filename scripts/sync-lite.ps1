@@ -50,7 +50,7 @@ if (Test-Path -LiteralPath $LiteRoot) {
 New-Item -ItemType Directory -Force -Path $LiteRoot | Out-Null
 
 $resourcepackPatternsToKeep = @(
-    "EAK.zip",
+    "EAK-SMP.zip",
     "Fast Better Grass.zip",
     "LowOnFire*.zip"
 )

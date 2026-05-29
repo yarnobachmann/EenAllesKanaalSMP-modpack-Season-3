@@ -2142,7 +2142,7 @@ metafile = false
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "5eb57ba985b3d474a2f23be6f0d1fadbcd1c4c179c1f289fc80179dfb22cefcb"
+hash = "ef0ed8e6900ded9f2ca025196b1a5fac74e58f857f1ff5c963c96615976f48b2"
 metafile = false
 
 [[files]]
@@ -5646,8 +5646,8 @@ hash = "a6487691e22cb3405256453d2496ee74aae824ae865b0ec57654380686993a53"
 metafile = false
 
 [[files]]
-file = "resourcepacks/EAK.zip"
-hash = "d28579cb09d954403227f070cd9cf5e9fa7590c991b13be1548140d795d14beb"
+file = "resourcepacks/EAK-SMP.zip"
+hash = "1aa0c6c49c6a0120ea4c7b7d8a513eab57a90ff63fce91f2b286b98e72006558"
 metafile = false
 
 [[files]]

@@ -1,3 +1,12 @@
 {
-  "schema_version": "2"
+  "schema_version": 2,
+  "default_packs": [
+    "file/EAK-SMP.zip"
+  ],
+  "pack_overrides": {
+    "file/EAK-SMP.zip": {
+      "force_compatible": true,
+      "required": true
+    }
+  }
 }

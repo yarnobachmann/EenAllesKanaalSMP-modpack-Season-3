@@ -2142,7 +2142,7 @@ metafile = false
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "ef0ed8e6900ded9f2ca025196b1a5fac74e58f857f1ff5c963c96615976f48b2"
+hash = "8f464f6cfa240f0e358d24b5518b812a6fec2c8000cac7777935e073fe702a9f"
 metafile = false
 
 [[files]]
@@ -3417,7 +3417,7 @@ metafile = false
 
 [[files]]
 file = "config/resourcepackoverrides.json"
-hash = "1cab1e1beef2a63354027d6a5f8ce299fee685dd5387d7fd21125c487c50c4c1"
+hash = "cde1fe87da89843d9b393ef25bbd7933f0a74ac537460f9c0783b462c3056bad"
 metafile = false
 
 [[files]]

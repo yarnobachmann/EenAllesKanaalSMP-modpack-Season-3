@@ -2516,6 +2516,11 @@ hash = "232b815f39d30dfb51e3f89b9ae9688bf0d11842bd3bb6bacf636128e1507720"
 metafile = false
 
 [[files]]
+file = "config/fancymenu/assets/wendy_en_de_bergen.ogg"
+hash = "6ea08e55e30fca323212e8b316f4c54ba836a3cc53537ae3d300c754bd7f7874"
+metafile = false
+
+[[files]]
 file = "config/fancymenu/assets/window-icon.png"
 hash = "e9721dae52a697ac8302bac7cf5977c1e2c9f44af0327490b64439f6ca018ebb"
 metafile = false
@@ -2528,6 +2533,11 @@ metafile = false
 [[files]]
 file = "config/fancymenu/assets/yarno_de_hakker.ogg"
 hash = "8fc91892fd3dda672b8a513940828c16e8bbe63ef6d30c6accfd13e94139a4a5"
+metafile = false
+
+[[files]]
+file = "config/fancymenu/assets/yarno_en_bart.ogg"
+hash = "e1f25074f2282e5e8becb8ed22bbb44c82afa963a148838e121e980583cb3b55"
 metafile = false
 
 [[files]]
@@ -2552,7 +2562,7 @@ metafile = false
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "2566d756390b74e00a5404d253d3e533ee9701fcf3279334900e53a72479a682"
+hash = "5d345172b63fa5585a1662580c91ed9e3c1d760d840e818525b204f36d034a68"
 metafile = false
 
 [[files]]
@@ -5637,7 +5647,7 @@ metafile = false
 
 [[files]]
 file = "resourcepacks/EAK.zip"
-hash = "2a5322f615917282bb4ddec427481be8d6a5a3d35e0f2b2a61882b8593561f4f"
+hash = "d28579cb09d954403227f070cd9cf5e9fa7590c991b13be1548140d795d14beb"
 metafile = false
 
 [[files]]

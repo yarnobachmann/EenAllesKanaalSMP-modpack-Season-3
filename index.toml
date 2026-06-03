@@ -5271,6 +5271,11 @@ hash = "de6ed336bd80154b7241a7b3276694befc1c94550add8bcdfe7f82e5172fd13d"
 metafile = false
 
 [[files]]
+file = "mods/Patchouli-1.21.1-93-NEOFORGE.jar"
+hash = "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993"
+metafile = false
+
+[[files]]
 file = "mods/piggyback-neoforge-1.21.1-1.1.1.jar"
 hash = "a9712c6d333302297db876beb973e105097e2660a22157c083c94954222c14eb"
 metafile = false

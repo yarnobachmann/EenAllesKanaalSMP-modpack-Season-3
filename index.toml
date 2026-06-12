@@ -4626,6 +4626,11 @@ hash = "4520de01496893d5cb80faaaeadf67b03481ebe769e11caffaa02bb12fe3bcd1"
 metafile = false
 
 [[files]]
+file = "mods/cultofazazelneo-1.0.7.jar"
+hash = "5861ca38eeb2e72cc5108fa4a78bb5c8dc32f4ea88cb2cf2da370286edd453fd"
+metafile = false
+
+[[files]]
 file = "mods/curios-neoforge-9.5.1+1.21.1.jar"
 hash = "a45df2125c26219974aba7507ffc9afe7b83acc941a386af3faacb1cc0056fde"
 metafile = false

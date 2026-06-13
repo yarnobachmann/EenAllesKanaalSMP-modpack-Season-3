@@ -92,7 +92,7 @@ metafile = false
 
 [[files]]
 file = "config/apotheosis/enchantments.cfg"
-hash = "b49313c203ae3171d06cf21db37f59691948abbf919eba6bb3ca40da324876a2"
+hash = "604db0577d860da69156749d60e8ea399158cd31aa6bcadcda37f17f13db9013"
 metafile = false
 
 [[files]]
@@ -2073,16 +2073,6 @@ metafile = false
 [[files]]
 file = "config/cristellib/ribbits/structure_toggle_config.json5"
 hash = "ba31cdaff598b49f1f595c5604f7081fcee1a527771079c7aff7aae6014b823a"
-metafile = false
-
-[[files]]
-file = "config/cristellib/stellarity/structure_placement_config.json5"
-hash = "0ad7e07de6cb90bd4e364550ee890818352036f77d68bf2f01b6ebfb83bc427e"
-metafile = false
-
-[[files]]
-file = "config/cristellib/stellarity/structure_toggle_config.json5"
-hash = "25286a8ec49438575ef4a1b2b03df02aec5d24564a9ca948ea78efcb6e9e488a"
 metafile = false
 
 [[files]]
@@ -4241,6 +4231,11 @@ hash = "aa2463747bad4c2351869226ea7bce7839510dfd2ac387f8d1588b1ce9309c67"
 metafile = false
 
 [[files]]
+file = "mods/baubley-heart-canisters-1.21.1-1.4.0.jar"
+hash = "cf0c406e54ffe470fff8e87e39a9c17590c99b3f181c73596329a1a2846a0d92"
+metafile = false
+
+[[files]]
 file = "mods/bellsandwhistles-0.4.7-1.21.1.jar"
 hash = "a438cf2ea3a05120e12342484f1e12ca11526fbf4195d259ce1d7df8a9b3ffca"
 metafile = false
@@ -5478,11 +5473,6 @@ metafile = false
 [[files]]
 file = "mods/soundsbegone-neoforge-1.5.1+mc1.21.jar"
 hash = "dee4df007a35242f8154d16e8e4395aeb27f85e477d639d2ea8c50f8d479c1ea"
-metafile = false
-
-[[files]]
-file = "mods/Stellarity-3.0.6.1.jar"
-hash = "71bc26dd6e698fd1adeda82b79bc954c52f4a105b6abeaef41537506ad2afca8"
 metafile = false
 
 [[files]]

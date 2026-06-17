@@ -59,7 +59,6 @@ $modPatternsToExclude = @(
     "DistantHorizons-*-1.21.1-fabric-neoforge.jar",
     "iris-neoforge-*.jar",
     "iris-flywheel-compat-NeoForge-*.jar",
-    "watermedia_youtube_plugin-*.jar",
     "voxy-*.jar",
     "sodiumoptionsapi-neoforge-*.jar"
 )

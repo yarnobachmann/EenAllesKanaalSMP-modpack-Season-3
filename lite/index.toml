@@ -5606,6 +5606,11 @@ hash = "bd118e6b3a7740dc14b21ddb9ba771acf152b4fd9e098b99aab72185fc3b1108"
 metafile = false
 
 [[files]]
+file = "mods/watermedia_youtube_plugin-2.1.2.jar"
+hash = "95c2841103b4d1e0c222f29b49d9500c0d5306772aa18c6eb11925be6ff7507e"
+metafile = false
+
+[[files]]
 file = "mods/watermedia-2.1.37.jar"
 hash = "cdd8e1b50e4dee0892c5ed02724cea6b1a74d2b718c7e974c9cfc0efa8c10389"
 metafile = false

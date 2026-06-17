@@ -5601,6 +5601,11 @@ hash = "fb0dc1f4bb36f471fafc86fee12b963f036ddf8d4622653509d884bbed96b1e5"
 metafile = false
 
 [[files]]
+file = "mods/waterframes-NEOFORGE-mc1.21.1-v2.1.23.jar"
+hash = "bd118e6b3a7740dc14b21ddb9ba771acf152b4fd9e098b99aab72185fc3b1108"
+metafile = false
+
+[[files]]
 file = "mods/watermedia-2.1.37.jar"
 hash = "cdd8e1b50e4dee0892c5ed02724cea6b1a74d2b718c7e974c9cfc0efa8c10389"
 metafile = false

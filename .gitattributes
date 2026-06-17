@@ -1,3 +1,1 @@
 * -text
-mods/wm_binaries-*.jar filter=lfs diff=lfs merge=lfs -text
-lite/mods/wm_binaries-*.jar filter=lfs diff=lfs merge=lfs -text

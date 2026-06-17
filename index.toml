@@ -5666,9 +5666,9 @@ hash = "1d9e5292ec49d99af9d3a420de2f3df847816aec081d2068c9e6017e4e6bfc32"
 metafile = false
 
 [[files]]
-file = "mods/wm_binaries-3.0.0-rc.1.jar"
-hash = "720d8cf3cef97856a1347738b259ed54d7a2aa06cbe7e304fc46d1c746343f0b"
-metafile = false
+file = "mods/wm_binaries-3.0.0-rc.1.pw.toml"
+hash = "44c74b03191fed4a21847fdffaf4dfde1ef3ade323720d373a7434d81173d0cd"
+metafile = true
 
 [[files]]
 file = "mods/xaerominimap-neoforge-1.21.1-26.1.0.jar"

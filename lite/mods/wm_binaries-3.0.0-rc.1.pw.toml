@@ -1,0 +1,13 @@
+name = "WATERMeDIA: Binaries"
+filename = "wm_binaries-3.0.0-rc.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/7436/617/wm_binaries-3.0.0-rc.1.jar"
+hash-format = "sha256"
+hash = "720d8cf3cef97856a1347738b259ed54d7a2aa06cbe7e304fc46d1c746343f0b"
+
+[update]
+[update.curseforge]
+project-id = 1029438
+file-id = 7436617

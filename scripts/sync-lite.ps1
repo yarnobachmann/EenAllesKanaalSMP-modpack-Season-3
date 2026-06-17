@@ -60,6 +60,7 @@ $modPatternsToExclude = @(
     "iris-neoforge-*.jar",
     "iris-flywheel-compat-NeoForge-*.jar",
     "waterframes-NEOFORGE-*.jar",
+    "watermedia_youtube_plugin-*.jar",
     "watermedia-*.jar",
     "watervision-NF-*.jar",
     "wm_binaries-*.jar",

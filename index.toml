@@ -5396,11 +5396,6 @@ hash = "13832eec4d25548658ab93b235889d314b0add4abe7ca0c603db3efdf7664e73"
 metafile = false
 
 [[files]]
-file = "mods/reeses-sodium-options-neoforge-1.8.3+mc1.21.4.jar"
-hash = "e00e960f9cae9ea411429fadaa48e2d778f8064667cf6aaee7ce88332813b0bf"
-metafile = false
-
-[[files]]
 file = "mods/refurbished_furniture-neoforge-1.21.1-1.0.22.jar"
 hash = "953a7840261eb79959769a97caa60cba2ee141700a4cbe208825268327136bdf"
 metafile = false

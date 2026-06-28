@@ -5511,11 +5511,6 @@ hash = "dc2838d5538db39414171fe86586ab89d1a30d2fd97f59229cc44cf3777f569d"
 metafile = false
 
 [[files]]
-file = "mods/sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar"
-hash = "a6b9114615e2fff97e1a99fbf9fae17b87baacb26b69dde2f423867b5932bc02"
-metafile = false
-
-[[files]]
 file = "mods/sophisticatedbackpacks-1.21.1-3.25.63.1912.jar"
 hash = "a2058bdefc75f6143cb8257463a734a2d5a733d9920f3111ed891277b3655374"
 metafile = false
